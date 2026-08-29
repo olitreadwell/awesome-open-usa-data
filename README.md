@@ -1,14 +1,14 @@
-# Open Items Directory
+# US Open Data
 
-[![CI](https://github.com/olitreadwell/dataset-directory-template/actions/workflows/ci.yml/badge.svg)](https://github.com/olitreadwell/dataset-directory-template/actions/workflows/ci.yml)
+Curated directory of public US open data sources: federal agencies, state
+portals, and civic datasets, with verified links, an OpenAPI-backed API, and a
+daily grow loop. Public data only; opt-out respected.
 
-Reusable template for any **open directory of {THING} in {PLACE}** — op
-shops, DJs, festivals, happy hours, quizzes, you name it. One repo ships
-dataset + scrapers + OpenAPI API + website + feeds + community loop +
-daily refresh, deployed to Vercel in minutes.
+[![CI](https://github.com/olitreadwell/awesome-open-usa-data/actions/workflows/ci.yml/badge.svg)](https://github.com/olitreadwell/awesome-open-usa-data/actions/workflows/ci.yml)
 
-New project? Read [TEMPLATE_USAGE.md](TEMPLATE_USAGE.md) — the 10-minute
-path from `gh repo create --template` to a live site.
+Built from the [dataset-directory-template](https://github.com/olitreadwell/dataset-directory-template): a dataset + scrapers + OpenAPI API + website + feeds + community loop + daily refresh app, deployed to Vercel.
+
+Every listing is a public open data source with a verified link. `lastVerified` shows when a link was last checked; the grow loop verifies links and adds new sources daily.
 
 ## What you get
 

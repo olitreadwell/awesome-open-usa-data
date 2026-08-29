@@ -10,6 +10,16 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | --- | --- | --- |
 | `example-listings` (this repo's `scripts/examples/listing-entries.json`) | seed pipeline demo | ✅ offline demo |
 
+| `data.gov` | initial seed source | ✅ planned |
+| `Census Bureau APIs` | initial seed source | ✅ planned |
+| `BLS Public Data API` | initial seed source | ✅ planned |
+| `FRED` | initial seed source | ✅ planned |
+| `EIA` | initial seed source | ✅ planned |
+| `USGS` | initial seed source | ✅ planned |
+| `NOAA` | initial seed source | ✅ planned |
+| `EPA` | initial seed source | ✅ planned |
+| `CDC` | initial seed source | ✅ planned |
+| `NREL` | initial seed source | ✅ planned |
 <!-- SEED-SOURCES -->
 
 Projects run `pnpm run setup` to list their own initial sources here; the
