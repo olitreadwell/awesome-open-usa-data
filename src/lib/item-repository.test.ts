@@ -25,7 +25,9 @@ describe('item repository (snapshot mode)', () => {
     const city = await listItems({ city: seedItems[0].city });
     expect(city.every((item) => item.city === seedItems[0].city)).toBe(true);
     const category = await listItems({ category: seedItems[0].categories[0] });
-    expect(category.every((item) => item.categories.includes(seedItems[0].categories[0]))).toBe(true);
+    expect(category.every((item) => item.categories.includes(seedItems[0].categories[0]))).toBe(
+      true
+    );
     const page = await listItems({ limit: 1, offset: 0 });
     expect(page.length).toBe(1);
   });

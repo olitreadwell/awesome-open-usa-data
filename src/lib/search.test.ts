@@ -12,7 +12,9 @@ describe('searchItems', () => {
 
   it('matches categories and locations', () => {
     expect(searchItems(seedItems, seedItems[0].categories[0]).length).toBeGreaterThan(0);
-    expect(searchItems(seedItems, seedItems[0].location ?? seedItems[0].name).length).toBeGreaterThan(0);
+    expect(
+      searchItems(seedItems, seedItems[0].location ?? seedItems[0].name).length
+    ).toBeGreaterThan(0);
   });
 
   it('returns everything on an empty query', () => {
