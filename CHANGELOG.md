@@ -7,6 +7,10 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-09-24: re-checked all 30 source links. Every one answered on this run
+  except data.ed.gov, which returns 403 to automated checks while serving
+  browsers (notes on that listing now say so). `lastVerified` rolled forward
+  to 2026-09-24.
 - 2026-09-23: re-checked all 27 source links. NOAA's old
   `/information-technology/open-apis` page now 404s (source repointed to the
   NOAA data hub) and SAM.gov does not answer automated checks from this host
