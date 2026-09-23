@@ -16,6 +16,7 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-23: `New York State Open Data` (data.ny.gov) added to the dataset.
 - 2026-09-23: `openFDA`, the FDA's public drug, device, food, and label APIs,
   added to the dataset.
 - 2026-09-23: `USAspending API`, the Treasury's federal spending API, added to

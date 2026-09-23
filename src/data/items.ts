@@ -404,6 +404,23 @@ const rawItems = [
     verified: true,
   },
   {
+    id: 'new-york-state-open-data',
+    slug: 'new-york-state-open-data',
+    name: 'New York State Open Data',
+    city: 'Albany',
+    region: 'New York',
+    location: 'Statewide',
+    lat: 42.6526,
+    lng: -73.7562,
+    description:
+      'New York State portal at data.ny.gov: health, transportation, labor, and environment datasets from state agencies, with the Socrata API and bulk exports.',
+    categories: ['catalog', 'api'],
+    website: 'https://data.ny.gov/',
+    source: { label: 'New York State', url: 'https://data.ny.gov/' },
+    lastVerified: '2026-09-23',
+    verified: true,
+  },
+  {
     id: 'california-open-data',
     slug: 'california-open-data',
     name: 'California Open Data Portal',

@@ -22,6 +22,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `NREL` | initial seed source | ✅ planned |
 | `USAspending API` | federal spending awards and accounts (Treasury) | ✅ planned |
 | `openFDA` | FDA drug, device, and food APIs | ✅ planned |
+| `New York State Open Data` | state agency datasets on data.ny.gov (Socrata) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis
