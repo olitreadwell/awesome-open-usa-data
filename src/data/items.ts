@@ -370,6 +370,23 @@ const rawItems = [
     verified: true,
   },
   {
+    id: 'openfda',
+    slug: 'openfda',
+    name: 'openFDA',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Silver Spring, MD',
+    lat: 38.9907,
+    lng: -77.0261,
+    description:
+      'FDA public APIs: drug adverse events, device recalls and 510(k) clearances, food enforcement reports, and product labels. No key needed for low volume.',
+    categories: ['health', 'api'],
+    website: 'https://open.fda.gov/',
+    source: { label: 'US Food and Drug Administration', url: 'https://open.fda.gov/apis/' },
+    lastVerified: '2026-09-23',
+    verified: true,
+  },
+  {
     id: 'nyc-open-data',
     slug: 'nyc-open-data',
     name: 'NYC Open Data',
