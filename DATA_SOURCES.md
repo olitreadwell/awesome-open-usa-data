@@ -22,6 +22,14 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `NREL` | initial seed source | ✅ planned |
 <!-- SEED-SOURCES -->
 
+## Candidate seeds from public-apis
+
+`reports/public-apis-candidates.md` holds US entries from
+[public-apis/public-apis](https://github.com/public-apis/public-apis) that this
+readme does not already carry: Census.gov, Data.gov, the Federal Register, SEC
+EDGAR, the FEC, FRED, and city portals for New York and Chicago among them.
+Regenerate it with the command in `reports/README.md`.
+
 Projects run `pnpm run setup` to list their own initial sources here; the
 scraper framework in `src/lib/scrapers/` turns each into a `Scraper`.
 

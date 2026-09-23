@@ -1,0 +1,27 @@
+# Config for the candidate report. The engine reads the repo readme, so the
+# dedupe step knows what is already listed.
+
+name = "US Open Data"
+repo_slug = "awesome-open-usa-data"
+readme = "../README.md"
+sections = ["Sources"]
+
+[sources]
+lists = ["https://raw.githubusercontent.com/public-apis/public-apis/master/README.md"]
+keywords = [
+    "united states",
+    "data.gov",
+    "census",
+    "federal",
+    "new york",
+    "california",
+    "texas",
+    "state of",
+    "usa",
+    "nyc",
+    "seattle",
+    "chicago",
+    "congress",
+    "sec edgar",
+]
+report = "public-apis-candidates.md"
