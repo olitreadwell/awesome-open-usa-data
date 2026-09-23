@@ -20,3 +20,10 @@ per iteration, plus a fuller entry when something blocks the loop.
   ended clean with `git checkout -- src/data/snapshot.json`. If a later
   iteration is skipped for "main has uncommitted changes" and the only diff is
   that timestamp, this is why.
+- Four CI workflows were already red before this batch and are still red, for
+  reasons unrelated to the dataset: `ci.yml` spell check (codespell reads the
+  `ot.mozmail.com` contact address as a typo of "to"), `quality.yml` Lighthouse
+  (total blocking time 300ms against a 200ms budget), `security.yml`
+  dependency audit (pnpm audit: 2 critical, 3 high, 3 moderate), and
+  `github-pages.yml` build. The gate that covers this work, "Check (mirrors
+  pnpm run check)" on 93ace39, passed, as did both E2E shards.
