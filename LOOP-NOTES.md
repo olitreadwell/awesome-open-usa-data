@@ -5,6 +5,24 @@ per iteration, plus a fuller entry when something blocks the loop.
 
 ## 2026-09-23
 
+- 2026-09-24 iteration. Link sweep of all 30 sources (website plus source URL,
+  60 requests, four at a time): every one returned 200 from this host except
+  `data.ed.gov`, which answers automated checks with 403 while serving
+  browsers. That is the known bot-protection case already described in the
+  `items.ts` header, so the link stays and the listing now carries a note
+  saying so. `sam.gov` timed out here on 2026-09-23 and returned 200 today, so
+  its note records both. `lastVerified` rolled forward to 2026-09-24 across
+  the set (`12f6476`).
+- Shipped three sources: `Treasury Fiscal Data API` (`4ad4692`), `NIH
+  RePORTER` (`08303ec`), and `Washington State Open Data` (`33252bb`). Each
+  was checked live before adding, including the API surface, not just the
+  landing page: the Fiscal Data `v2/accounting/od/debt_to_penny` endpoint
+  returns JSON, the NIH RePORTER `/v2/projects/search` POST returns a result
+  set, and the `data.wa.gov` Socrata catalog API returns JSON.
+- First sweep ran all 60 URLs at once and the last 26 requests failed with
+  connection timeouts while the first 34 answered fine. That was parallelism,
+  not dead sites: rerunning with four workers answered everything. Worth
+  knowing before a future iteration logs a batch of false failures.
 - Shipped three sources: `USAspending API`, `openFDA`, and `New York State
   Open Data`. Each link was checked live before adding (api.usaspending.gov,
   open.fda.gov/apis, data.ny.gov: all 200).
