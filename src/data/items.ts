@@ -409,6 +409,23 @@ const rawItems = [
     verified: true,
   },
   {
+    id: 'nih-reporter',
+    slug: 'nih-reporter',
+    name: 'NIH RePORTER',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Bethesda, MD',
+    lat: 38.9847,
+    lng: -77.0947,
+    description:
+      'NIH database of funded biomedical research: projects, principal investigators, award amounts, and linked publications. JSON search API, no key.',
+    categories: ['health', 'science', 'api'],
+    website: 'https://reporter.nih.gov/',
+    source: { label: 'US National Institutes of Health', url: 'https://api.reporter.nih.gov/' },
+    lastVerified: '2026-09-24',
+    verified: true,
+  },
+  {
     id: 'nyc-open-data',
     slug: 'nyc-open-data',
     name: 'NYC Open Data',

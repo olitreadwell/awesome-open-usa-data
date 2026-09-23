@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-23T16:50:22.424Z",
+  "exportedAt": "2026-09-23T16:50:34.579Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -503,6 +503,28 @@
       "source": {
         "label": "US Food and Drug Administration",
         "url": "https://open.fda.gov/apis/"
+      },
+      "lastVerified": "2026-09-24",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "nih-reporter",
+      "name": "NIH RePORTER",
+      "slug": "nih-reporter",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Bethesda, MD",
+      "lat": 38.9847,
+      "lng": -77.0947,
+      "website": "https://reporter.nih.gov/",
+      "categories": ["health", "science", "api"],
+      "description": "NIH database of funded biomedical research: projects, principal investigators, award amounts, and linked publications. JSON search API, no key.",
+      "source": {
+        "label": "US National Institutes of Health",
+        "url": "https://api.reporter.nih.gov/"
       },
       "lastVerified": "2026-09-24",
       "verified": true,

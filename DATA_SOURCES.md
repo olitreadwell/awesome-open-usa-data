@@ -24,6 +24,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `Treasury Fiscal Data API` | Treasury debt, rates, spending, and revenue (fiscaldata.treasury.gov) | ✅ planned |
 | `openFDA` | FDA drug, device, and food APIs | ✅ planned |
 | `New York State Open Data` | state agency datasets on data.ny.gov (Socrata) | ✅ planned |
+| `Washington State Open Data` | state agency datasets on data.wa.gov (Socrata) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis
