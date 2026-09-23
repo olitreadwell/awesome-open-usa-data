@@ -372,6 +372,26 @@ const rawItems = [
     verified: true,
   },
   {
+    id: 'treasury-fiscal-data-api',
+    slug: 'treasury-fiscal-data-api',
+    name: 'Treasury Fiscal Data API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'Treasury fiscal data as a REST API and bulk download: national debt, interest rates, federal spending and revenue, and savings bond values. No API key.',
+    categories: ['economy', 'government', 'api'],
+    website: 'https://fiscaldata.treasury.gov/',
+    source: {
+      label: 'US Department of the Treasury',
+      url: 'https://fiscaldata.treasury.gov/api-documentation/',
+    },
+    lastVerified: '2026-09-24',
+    verified: true,
+  },
+  {
     id: 'openfda',
     slug: 'openfda',
     name: 'openFDA',
