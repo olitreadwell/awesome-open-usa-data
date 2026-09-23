@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-23T09:40:08.520Z",
+  "exportedAt": "2026-09-23T09:41:25.313Z",
   "license": "Public data only. Opt-out respected — see /opt-out.",
   "items": [
     {
@@ -442,6 +442,28 @@
       "optOut": false,
       "calendarDates": [],
       "notes": "sam.gov did not answer automated checks from this host on 2026-09-23 (timeout); the GSA Entity Management API docs linked here returned 200."
+    },
+    {
+      "id": "usaspending-api",
+      "name": "USAspending API",
+      "slug": "usaspending-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://api.usaspending.gov/",
+      "categories": ["economy", "government", "api"],
+      "description": "Treasury API for federal spending under the DATA Act: awards, recipients, agency and geographic breakdowns, and account-level data, all as JSON.",
+      "source": {
+        "label": "US Department of the Treasury",
+        "url": "https://api.usaspending.gov/"
+      },
+      "lastVerified": "2026-09-23",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
     },
     {
       "id": "nyc-open-data",

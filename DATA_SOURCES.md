@@ -20,6 +20,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `EPA` | initial seed source | ✅ planned |
 | `CDC` | initial seed source | ✅ planned |
 | `NREL` | initial seed source | ✅ planned |
+| `USAspending API` | federal spending awards and accounts (Treasury) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

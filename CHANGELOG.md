@@ -16,6 +16,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-23: `USAspending API`, the Treasury's federal spending API, added to
+  the dataset.
 - Dataset-directory template layer over the base starter:
   - Generic `items` schema (zod) with seed dataset + snapshot mode
     (`src/data/snapshot.json`) and Postgres mode (`items`, `scrapes`,

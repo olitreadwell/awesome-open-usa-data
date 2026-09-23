@@ -353,6 +353,23 @@ const rawItems = [
       'sam.gov did not answer automated checks from this host on 2026-09-23 (timeout); the GSA Entity Management API docs linked here returned 200.',
   },
   {
+    id: 'usaspending-api',
+    slug: 'usaspending-api',
+    name: 'USAspending API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'Treasury API for federal spending under the DATA Act: awards, recipients, agency and geographic breakdowns, and account-level data, all as JSON.',
+    categories: ['economy', 'government', 'api'],
+    website: 'https://api.usaspending.gov/',
+    source: { label: 'US Department of the Treasury', url: 'https://api.usaspending.gov/' },
+    lastVerified: '2026-09-23',
+    verified: true,
+  },
+  {
     id: 'nyc-open-data',
     slug: 'nyc-open-data',
     name: 'NYC Open Data',
