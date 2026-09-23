@@ -17,7 +17,7 @@ const out = execFileSync(
     const exportBody = {
       version: "seed",
       exportedAt: new Date().toISOString(),
-      license: "Public data only. Opt-out respected — see /opt-out.",
+      license: "Public data only. Opt-out respected: see /opt-out.",
       items: seedItems.map((i) => ({
         ...i,
         categories: i.categories ?? [],
