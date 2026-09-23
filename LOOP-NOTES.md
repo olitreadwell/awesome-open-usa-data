@@ -20,6 +20,23 @@ per iteration, plus a fuller entry when something blocks the loop.
   ended clean with `git checkout -- src/data/snapshot.json`. If a later
   iteration is skipped for "main has uncommitted changes" and the only diff is
   that timestamp, this is why.
+- Blocker fixed at the root: `pnpm run check:fast` starts with
+  `build:snapshot`, which stamped `exportedAt` with a fresh `new Date()` on
+  every run, so one green gate left `src/data/snapshot.json` modified. The
+  wrapper's dirty check (`git diff --quiet -- . ':(exclude)LOOP-NOTES.md'`)
+  then skipped every later iteration and would have fired a heal run after
+  three. `scripts/build-snapshot.mjs` now reuses the committed `exportedAt`
+  while the items are unchanged and skips the write, so a green gate leaves
+  the tree clean, and the timestamp still moves when the data moves. Same fix
+  the UK repo shipped in `7c14574`. Proven both ways: `check:fast` left
+  `git status --short` empty, and a hand edit to `data-gov` moved `exportedAt`
+  from `10:03:43.987Z` to `11:16:37.779Z` before the edit was reverted.
+- The full `pnpm run check` (coverage, build, smoke, e2e) is not the loop's
+  gate, but it does dirty the tree: `next dev`, which the e2e suite starts,
+  rewrites `next-env.d.ts` to the `.next/dev/types` paths and re-adds the
+  em-dash version of the generated `AGENTS.md` block that `71f51d4` had
+  cleaned up. Both were reverted here; an iteration that runs the full suite
+  has to do the same before it ends.
 - Four CI workflows were already red before this batch and are still red, for
   reasons unrelated to the dataset: `ci.yml` spell check (codespell reads the
   `ot.mozmail.com` contact address as a typo of "to"), `quality.yml` Lighthouse
