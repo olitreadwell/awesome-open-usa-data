@@ -5,6 +5,15 @@ All notable changes documented here. Format follows
 
 ## [Unreleased]
 
+### Changed
+
+- 2026-09-23: re-checked all 27 source links. NOAA's old
+  `/information-technology/open-apis` page now 404s (source repointed to the
+  NOAA data hub) and SAM.gov does not answer automated checks from this host
+  (source repointed to the GSA Entity Management API docs, which return 200).
+  Every other link returned 200, so `lastVerified` rolled forward to
+  2026-09-23.
+
 ### Added
 
 - Dataset-directory template layer over the base starter:
