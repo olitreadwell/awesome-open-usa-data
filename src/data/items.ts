@@ -561,6 +561,23 @@ const rawItems = [
     lastVerified: '2026-09-24',
     verified: true,
   },
+  {
+    id: 'washington-state-open-data',
+    slug: 'washington-state-open-data',
+    name: 'Washington State Open Data',
+    city: 'Olympia',
+    region: 'Washington',
+    location: 'Statewide',
+    lat: 47.0379,
+    lng: -122.9007,
+    description:
+      'State of Washington data.wa.gov: agency datasets on health, education, transportation, environment, and corrections, with Socrata SODA APIs and bulk exports.',
+    categories: ['catalog', 'api', 'government'],
+    website: 'https://data.wa.gov/',
+    source: { label: 'State of Washington', url: 'https://data.wa.gov/' },
+    lastVerified: '2026-09-24',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

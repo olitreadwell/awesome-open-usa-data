@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-23T16:50:34.579Z",
+  "exportedAt": "2026-09-23T16:50:39.719Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -701,6 +701,28 @@
       "source": {
         "label": "State of Colorado",
         "url": "https://data.colorado.gov/"
+      },
+      "lastVerified": "2026-09-24",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "washington-state-open-data",
+      "name": "Washington State Open Data",
+      "slug": "washington-state-open-data",
+      "city": "Olympia",
+      "region": "Washington",
+      "location": "Statewide",
+      "lat": 47.0379,
+      "lng": -122.9007,
+      "website": "https://data.wa.gov/",
+      "categories": ["catalog", "api", "government"],
+      "description": "State of Washington data.wa.gov: agency datasets on health, education, transportation, environment, and corrections, with Socrata SODA APIs and bulk exports.",
+      "source": {
+        "label": "State of Washington",
+        "url": "https://data.wa.gov/"
       },
       "lastVerified": "2026-09-24",
       "verified": true,

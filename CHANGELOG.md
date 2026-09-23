@@ -24,6 +24,7 @@ All notable changes documented here. Format follows
   the dataset.
 - 2026-09-24: `NIH RePORTER` (reporter.nih.gov, api.reporter.nih.gov) added to
   the dataset.
+- 2026-09-24: `Washington State Open Data` (data.wa.gov) added to the dataset.
 - 2026-09-23: `New York State Open Data` (data.ny.gov) added to the dataset.
 - 2026-09-23: `openFDA`, the FDA's public drug, device, food, and label APIs,
   added to the dataset.

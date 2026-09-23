@@ -25,6 +25,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `openFDA` | FDA drug, device, and food APIs | ✅ planned |
 | `New York State Open Data` | state agency datasets on data.ny.gov (Socrata) | ✅ planned |
 | `Washington State Open Data` | state agency datasets on data.wa.gov (Socrata) | ✅ planned |
+| `NIH RePORTER` | NIH-funded research projects and investigators | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis
