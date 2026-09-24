@@ -7,6 +7,9 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-09-25: re-checked all 33 source links. Every one answered on this
+  run except data.ed.gov, which keeps returning 403 to automated checks
+  while serving browsers. `lastVerified` rolled forward to 2026-09-25.
 - 2026-09-24: re-checked all 30 source links. Every one answered on this run
   except data.ed.gov, which returns 403 to automated checks while serving
   browsers (notes on that listing now say so). `lastVerified` rolled forward
