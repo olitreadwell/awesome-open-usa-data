@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-24T16:40:59.379Z",
+  "exportedAt": "2026-09-24T16:41:16.961Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -767,6 +767,28 @@
       "source": {
         "label": "CMS",
         "url": "https://data.cms.gov/provider-data/docs"
+      },
+      "lastVerified": "2026-09-25",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "michigan-open-data",
+      "name": "Michigan Open Data",
+      "slug": "michigan-open-data",
+      "city": "Lansing",
+      "region": "Michigan",
+      "location": "Statewide",
+      "lat": 42.7325,
+      "lng": -84.5555,
+      "website": "https://data.michigan.gov/",
+      "categories": ["catalog", "api", "government"],
+      "description": "State of Michigan portal at data.michigan.gov: agency datasets on procurement, public health, veterans services, and local government finance, served through the Socrata SODA API with bulk exports.",
+      "source": {
+        "label": "State of Michigan",
+        "url": "https://data.michigan.gov/"
       },
       "lastVerified": "2026-09-25",
       "verified": true,

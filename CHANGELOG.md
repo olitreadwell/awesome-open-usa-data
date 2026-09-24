@@ -23,6 +23,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-25: `Michigan Open Data` (data.michigan.gov) added to the
+  dataset.
 - 2026-09-25: `CMS Provider Data` (data.cms.gov provider data) added to
   the dataset.
 - 2026-09-25: `SEC EDGAR APIs` (sec.gov EDGAR APIs, data.sec.gov) added to

@@ -615,6 +615,23 @@ const rawItems = [
     lastVerified: '2026-09-25',
     verified: true,
   },
+  {
+    id: 'michigan-open-data',
+    slug: 'michigan-open-data',
+    name: 'Michigan Open Data',
+    city: 'Lansing',
+    region: 'Michigan',
+    location: 'Statewide',
+    lat: 42.7325,
+    lng: -84.5555,
+    description:
+      'State of Michigan portal at data.michigan.gov: agency datasets on procurement, public health, veterans services, and local government finance, served through the Socrata SODA API with bulk exports.',
+    categories: ['catalog', 'api', 'government'],
+    website: 'https://data.michigan.gov/',
+    source: { label: 'State of Michigan', url: 'https://data.michigan.gov/' },
+    lastVerified: '2026-09-25',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

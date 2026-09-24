@@ -28,6 +28,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `NIH RePORTER` | NIH-funded research projects and investigators | ✅ planned |
 | `SEC EDGAR APIs` | SEC filings and XBRL company facts (data.sec.gov) | ✅ planned |
 | `CMS Provider Data` | Medicare care-quality datasets on hospitals and providers | ✅ planned |
+| `Michigan Open Data` | state agency datasets on data.michigan.gov (Socrata) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis
