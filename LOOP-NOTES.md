@@ -62,3 +62,24 @@ per iteration, plus a fuller entry when something blocks the loop.
   dependency audit (pnpm audit: 2 critical, 3 high, 3 moderate), and
   `github-pages.yml` build. The gate that covers this work, "Check (mirrors
   pnpm run check)" on 93ace39, passed, as did both E2E shards.
+
+## 2026-09-25
+
+- Link sweep of every listed URL (41 unique after dedupe, four requests at a
+  time): all returned 200 except `data.ed.gov`, the known bot-protection 403
+  that still serves browsers. No URL changes needed, and `lastVerified` rolled
+  forward to 2026-09-25 across the set (`548fe4b`).
+- Shipped three sources, each checked live before adding, including the API
+  surface rather than just the landing page: `SEC EDGAR APIs` (`6c4bfb0`),
+  `CMS Provider Data` (`e093489`), and `Michigan Open Data` (`208c343`). The
+  checks that backed them: `data.sec.gov/submissions/CIK0000320193.json`
+  returns JSON and the full-index archive page returns 200; the CMS
+  provider-data metastore API returns 237 dataset records and
+  `Hospital_General_Information.csv` downloads as 1.4 MB of `text/csv`; the
+  `data.michigan.gov` SODA query on dataset `4qfe-hfck` returns JSON.
+- `data.cms.gov` serves its provider-data pages fine but answers 403 on the
+  site root and on `/api-documentation`, so the listing points at
+  `/provider-data/` and `/provider-data/docs`, both 200 from this host.
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
