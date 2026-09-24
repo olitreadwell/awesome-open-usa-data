@@ -23,6 +23,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-25: `SEC EDGAR APIs` (sec.gov EDGAR APIs, data.sec.gov) added to
+  the dataset.
 - 2026-09-24: `Treasury Fiscal Data API` (fiscaldata.treasury.gov) added to
   the dataset.
 - 2026-09-24: `NIH RePORTER` (reporter.nih.gov, api.reporter.nih.gov) added to

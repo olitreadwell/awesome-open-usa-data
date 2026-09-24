@@ -578,6 +578,26 @@ const rawItems = [
     lastVerified: '2026-09-25',
     verified: true,
   },
+  {
+    id: 'sec-edgar-apis',
+    slug: 'sec-edgar-apis',
+    name: 'SEC EDGAR APIs',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'Securities and Exchange Commission filings and the XBRL facts extracted from them. data.sec.gov serves company submission histories, company facts, and frames as JSON without an API key, and the EDGAR full-index archive covers bulk download of every filing.',
+    categories: ['finance', 'api', 'government'],
+    website: 'https://www.sec.gov/edgar/search/',
+    source: {
+      label: 'SEC',
+      url: 'https://www.sec.gov/search-filings/edgar-application-programming-interfaces',
+    },
+    lastVerified: '2026-09-25',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

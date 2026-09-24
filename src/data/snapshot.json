@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-24T16:39:57.638Z",
+  "exportedAt": "2026-09-24T16:40:37.416Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -723,6 +723,28 @@
       "source": {
         "label": "State of Washington",
         "url": "https://data.wa.gov/"
+      },
+      "lastVerified": "2026-09-25",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "sec-edgar-apis",
+      "name": "SEC EDGAR APIs",
+      "slug": "sec-edgar-apis",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://www.sec.gov/edgar/search/",
+      "categories": ["finance", "api", "government"],
+      "description": "Securities and Exchange Commission filings and the XBRL facts extracted from them. data.sec.gov serves company submission histories, company facts, and frames as JSON without an API key, and the EDGAR full-index archive covers bulk download of every filing.",
+      "source": {
+        "label": "SEC",
+        "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
       },
       "lastVerified": "2026-09-25",
       "verified": true,
