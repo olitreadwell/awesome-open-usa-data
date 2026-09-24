@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-24T16:40:37.416Z",
+  "exportedAt": "2026-09-24T16:40:59.379Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -745,6 +745,28 @@
       "source": {
         "label": "SEC",
         "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+      },
+      "lastVerified": "2026-09-25",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "cms-provider-data",
+      "name": "CMS Provider Data",
+      "slug": "cms-provider-data",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Baltimore, MD",
+      "lat": 39.2904,
+      "lng": -76.6122,
+      "website": "https://data.cms.gov/provider-data/",
+      "categories": ["health", "statistics", "api"],
+      "description": "Care Compare provider data from the Centers for Medicare & Medicaid Services, covering hospitals, dialysis facilities, home health agencies, hospices, and nursing facilities. Public metastore API and bulk CSV downloads, no key needed.",
+      "source": {
+        "label": "CMS",
+        "url": "https://data.cms.gov/provider-data/docs"
       },
       "lastVerified": "2026-09-25",
       "verified": true,

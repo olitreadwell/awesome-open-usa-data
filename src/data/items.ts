@@ -598,6 +598,23 @@ const rawItems = [
     lastVerified: '2026-09-25',
     verified: true,
   },
+  {
+    id: 'cms-provider-data',
+    slug: 'cms-provider-data',
+    name: 'CMS Provider Data',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Baltimore, MD',
+    lat: 39.2904,
+    lng: -76.6122,
+    description:
+      'Care Compare provider data from the Centers for Medicare & Medicaid Services, covering hospitals, dialysis facilities, home health agencies, hospices, and nursing facilities. Public metastore API and bulk CSV downloads, no key needed.',
+    categories: ['health', 'statistics', 'api'],
+    website: 'https://data.cms.gov/provider-data/',
+    source: { label: 'CMS', url: 'https://data.cms.gov/provider-data/docs' },
+    lastVerified: '2026-09-25',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
