@@ -29,6 +29,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `SEC EDGAR APIs` | SEC filings and XBRL company facts (data.sec.gov) | ✅ planned |
 | `CMS Provider Data` | Medicare care-quality datasets on hospitals and providers | ✅ planned |
 | `Michigan Open Data` | state agency datasets on data.michigan.gov (Socrata) | ✅ planned |
+| `FDIC BankFind Suite API` | FDIC-insured bank and thrift records on api.fdic.gov/banks | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

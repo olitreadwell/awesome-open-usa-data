@@ -632,6 +632,23 @@ const rawItems = [
     lastVerified: '2026-09-26',
     verified: true,
   },
+  {
+    id: 'fdic-bankfind-api',
+    slug: 'fdic-bankfind-api',
+    name: 'FDIC BankFind Suite API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'FDIC records for every insured US bank and thrift, served as JSON with no API key: institution details, branch locations, quarterly financials, structure and ownership history, and the failed-bank list. Endpoints run under api.fdic.gov/banks and the Swagger reference is at api.fdic.gov/banks/docs; the same extracts are downloadable from the FDIC bank data and statistics pages.',
+    categories: ['finance', 'statistics', 'api'],
+    website: 'https://banks.data.fdic.gov/bankfind-suite/bankfind',
+    source: { label: 'FDIC', url: 'https://api.fdic.gov/banks/docs' },
+    lastVerified: '2026-09-26',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

@@ -28,6 +28,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-26: `FDIC BankFind Suite API` (api.fdic.gov/banks) added to the
+  dataset.
 - 2026-09-25: `Michigan Open Data` (data.michigan.gov) added to the
   dataset.
 - 2026-09-25: `CMS Provider Data` (data.cms.gov provider data) added to

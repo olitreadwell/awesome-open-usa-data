@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-25T16:41:13.531Z",
+  "exportedAt": "2026-09-25T16:41:24.841Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -789,6 +789,28 @@
       "source": {
         "label": "State of Michigan",
         "url": "https://data.michigan.gov/"
+      },
+      "lastVerified": "2026-09-26",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "fdic-bankfind-api",
+      "name": "FDIC BankFind Suite API",
+      "slug": "fdic-bankfind-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://banks.data.fdic.gov/bankfind-suite/bankfind",
+      "categories": ["finance", "statistics", "api"],
+      "description": "FDIC records for every insured US bank and thrift, served as JSON with no API key: institution details, branch locations, quarterly financials, structure and ownership history, and the failed-bank list. Endpoints run under api.fdic.gov/banks and the Swagger reference is at api.fdic.gov/banks/docs; the same extracts are downloadable from the FDIC bank data and statistics pages.",
+      "source": {
+        "label": "FDIC",
+        "url": "https://api.fdic.gov/banks/docs"
       },
       "lastVerified": "2026-09-26",
       "verified": true,
