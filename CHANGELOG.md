@@ -7,6 +7,11 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-09-26: re-checked all 36 listing URLs (46 unique after dedupe, four
+  requests at a time). Every one answered: 45 with HTTP 200 and eia.gov
+  with a 503 to a bare scripted user-agent but 200 to a browser user-agent,
+  so that listing stands as-is. data.ed.gov, the long-running 403, answered
+  200 on this run. `lastVerified` rolled forward to 2026-09-26.
 - 2026-09-25: re-checked all 33 source links. Every one answered on this
   run except data.ed.gov, which keeps returning 403 to automated checks
   while serving browsers. `lastVerified` rolled forward to 2026-09-25.
