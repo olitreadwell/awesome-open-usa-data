@@ -83,3 +83,36 @@ per iteration, plus a fuller entry when something blocks the loop.
 - `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
   links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
   in CI on the push.
+
+## 2026-09-26
+
+- Link sweep of every listed URL (46 unique after dedupe, four requests at a
+  time): 45 answered 200 on the first pass. `eia.gov/opendata/` answered 503
+  to a scripted user-agent and 200 to a browser user-agent, so it stays as
+  listed. `data.ed.gov`, the long-running bot-protection 403, answered 200
+  today. No URL changes were needed and `lastVerified` rolled forward to
+  2026-09-26 across the set (`361f237`).
+- Shipped three sources, each checked live before adding, including the API
+  surface rather than just the landing page: `FDIC BankFind Suite API`
+  (`6273682`), `USDA NASS Quick Stats API` (`3e246c5`), and `San Francisco
+  Open Data` (`52d45b2`). The checks that backed them: every
+  `api.fdic.gov/banks/*` family (institutions, locations, financials, history,
+  summary, failures, sod) returns JSON without a key, and
+  `banks.data.fdic.gov/api/*` now 301s to that host while
+  `banks.data.fdic.gov/docs` redirects to `api.fdic.gov/banks/docs`; Quick
+  Stats answers 401 without a key at `quickstats.nass.usda.gov/api/api_GET/`,
+  which proves the endpoint is live and key-gated rather than broken; the
+  `data.sf.gov` SODA endpoint returns JSON, CSV, and GeoJSON for dataset
+  `wg3w-h783` (Police Department Incident Reports).
+- `data.sfgov.org` now 301s to `data.sf.gov`; the new portal's own page says
+  the address changed and the SODA API is unchanged, so the listing points at
+  the new host. Its `/api/catalog/v1` federated search returns datasets from
+  other cities, which is a quirk of that endpoint rather than a sign the
+  portal is wrong: `/api/views.json` and per-dataset resource queries are
+  scoped to San Francisco.
+- The prompt's step 1 names `scripts/check-external-links.mjs` as the link
+  checker, but that script enforces `target="_blank"` on external links in
+  JSX. The URL liveness sweep is done here by hand each iteration.
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
