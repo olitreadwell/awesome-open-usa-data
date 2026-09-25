@@ -666,6 +666,23 @@ const rawItems = [
     lastVerified: '2026-09-26',
     verified: true,
   },
+  {
+    id: 'san-francisco-open-data',
+    slug: 'san-francisco-open-data',
+    name: 'San Francisco Open Data',
+    city: 'San Francisco',
+    region: 'California',
+    location: 'Citywide',
+    lat: 37.7749,
+    lng: -122.4194,
+    description:
+      "DataSF, the City and County of San Francisco's open data portal, which moved from data.sfgov.org to data.sf.gov. Department datasets on policing, transit, permits, housing, and the city budget, published through the Socrata Open Data API with JSON, CSV, and GeoJSON exports.",
+    categories: ['catalog', 'api', 'government'],
+    website: 'https://data.sf.gov/',
+    source: { label: 'City and County of San Francisco', url: 'https://data.sf.gov/' },
+    lastVerified: '2026-09-26',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

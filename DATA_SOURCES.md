@@ -31,6 +31,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `Michigan Open Data` | state agency datasets on data.michigan.gov (Socrata) | ✅ planned |
 | `FDIC BankFind Suite API` | FDIC-insured bank and thrift records on api.fdic.gov/banks | ✅ planned |
 | `USDA NASS Quick Stats API` | crop, livestock, price, and county estimates (quickstats.nass.usda.gov) | ✅ planned |
+| `San Francisco Open Data` | city department datasets on data.sf.gov (Socrata) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

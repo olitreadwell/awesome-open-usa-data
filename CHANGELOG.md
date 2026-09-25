@@ -28,6 +28,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-26: `San Francisco Open Data` (data.sf.gov, the new home of
+  data.sfgov.org) added to the dataset.
 - 2026-09-26: `USDA NASS Quick Stats API` (quickstats.nass.usda.gov)
   added to the dataset.
 - 2026-09-26: `FDIC BankFind Suite API` (api.fdic.gov/banks) added to the
