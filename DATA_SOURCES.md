@@ -30,6 +30,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `CMS Provider Data` | Medicare care-quality datasets on hospitals and providers | ✅ planned |
 | `Michigan Open Data` | state agency datasets on data.michigan.gov (Socrata) | ✅ planned |
 | `FDIC BankFind Suite API` | FDIC-insured bank and thrift records on api.fdic.gov/banks | ✅ planned |
+| `USDA NASS Quick Stats API` | crop, livestock, price, and county estimates (quickstats.nass.usda.gov) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

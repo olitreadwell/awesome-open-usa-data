@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-25T16:41:24.841Z",
+  "exportedAt": "2026-09-25T16:41:28.152Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -811,6 +811,28 @@
       "source": {
         "label": "FDIC",
         "url": "https://api.fdic.gov/banks/docs"
+      },
+      "lastVerified": "2026-09-26",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "usda-nass-quick-stats-api",
+      "name": "USDA NASS Quick Stats API",
+      "slug": "usda-nass-quick-stats-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://quickstats.nass.usda.gov/",
+      "categories": ["agriculture", "statistics", "api"],
+      "description": "National Agricultural Statistics Service estimates behind the Quick Stats query tool: crop and livestock production, inventories, prices, and county-level estimates, plus Census of Agriculture tables. The JSON API at quickstats.nass.usda.gov/api takes a free key, and NASS publishes bulk datasets for offline use.",
+      "source": {
+        "label": "USDA NASS",
+        "url": "https://quickstats.nass.usda.gov/api"
       },
       "lastVerified": "2026-09-26",
       "verified": true,

@@ -649,6 +649,23 @@ const rawItems = [
     lastVerified: '2026-09-26',
     verified: true,
   },
+  {
+    id: 'usda-nass-quick-stats-api',
+    slug: 'usda-nass-quick-stats-api',
+    name: 'USDA NASS Quick Stats API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'National Agricultural Statistics Service estimates behind the Quick Stats query tool: crop and livestock production, inventories, prices, and county-level estimates, plus Census of Agriculture tables. The JSON API at quickstats.nass.usda.gov/api takes a free key, and NASS publishes bulk datasets for offline use.',
+    categories: ['agriculture', 'statistics', 'api'],
+    website: 'https://quickstats.nass.usda.gov/',
+    source: { label: 'USDA NASS', url: 'https://quickstats.nass.usda.gov/api' },
+    lastVerified: '2026-09-26',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
