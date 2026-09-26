@@ -39,6 +39,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-27: `GovInfo API` (api.govinfo.gov, bulk data at
+  govinfo.gov/bulkdata) added to the dataset.
 - 2026-09-27: `OpenFEC API` (api.open.fec.gov, with bulk downloads at
   fec.gov/data) added to the dataset.
 - 2026-09-27: `FRED (Federal Reserve Economic Data)` (fred.stlouisfed.org,

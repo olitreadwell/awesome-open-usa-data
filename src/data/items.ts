@@ -725,6 +725,23 @@ const rawItems = [
     lastVerified: '2026-09-27',
     verified: true,
   },
+  {
+    id: 'govinfo-api',
+    slug: 'govinfo-api',
+    name: 'GovInfo API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      "The Government Publishing Office's GovInfo: authenticated PDF and XML of Congressional bills, bill status, the Congressional Record, the Federal Register, the Code of Federal Regulations, the US Code, public laws, court opinions, and budget documents. The REST API at api.govinfo.gov takes an api.data.gov key, and GPO runs a bulk data repository and link service beside it.",
+    categories: ['government', 'catalog', 'api'],
+    website: 'https://www.govinfo.gov/',
+    source: { label: 'US Government Publishing Office', url: 'https://api.govinfo.gov/docs/' },
+    lastVerified: '2026-09-27',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

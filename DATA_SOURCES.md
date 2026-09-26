@@ -34,6 +34,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `San Francisco Open Data` | city department datasets on data.sf.gov (Socrata) | ✅ planned |
 | `FRED` | US and international economic time series on api.stlouisfed.org (St. Louis Fed) | ✅ planned |
 | `OpenFEC API` | FEC campaign finance records on api.open.fec.gov | ✅ planned |
+| `GovInfo API` | GPO federal publications on api.govinfo.gov (bills, Federal Register, US Code) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

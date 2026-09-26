@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-26T15:40:26.717Z",
+  "exportedAt": "2026-09-26T15:40:37.163Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -900,6 +900,28 @@
       "source": {
         "label": "Federal Election Commission",
         "url": "https://api.open.fec.gov/developers/"
+      },
+      "lastVerified": "2026-09-27",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "govinfo-api",
+      "name": "GovInfo API",
+      "slug": "govinfo-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://www.govinfo.gov/",
+      "categories": ["government", "catalog", "api"],
+      "description": "The Government Publishing Office's GovInfo: authenticated PDF and XML of Congressional bills, bill status, the Congressional Record, the Federal Register, the Code of Federal Regulations, the US Code, public laws, court opinions, and budget documents. The REST API at api.govinfo.gov takes an api.data.gov key, and GPO runs a bulk data repository and link service beside it.",
+      "source": {
+        "label": "US Government Publishing Office",
+        "url": "https://api.govinfo.gov/docs/"
       },
       "lastVerified": "2026-09-27",
       "verified": true,
