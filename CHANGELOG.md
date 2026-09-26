@@ -7,6 +7,17 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-09-27: re-checked every listing URL and source link (53 unique
+  addresses after dedupe, four requests at a time). All 53 answered 200,
+  including `data.ed.gov` (the long-running bot-protection 403) and
+  `eia.gov`, which answered this run. Redirects are now stored at their
+  destination: data.gov, the BLS developer docs, the Federal Register API
+  docs, and SAM.gov entity information. Two listings had moved for real:
+  `data.cityofnewyork.us` 301s to nyc.gov/opendata, so the listing points at
+  the city's new portal while the Socrata API host stays as the source, and
+  `openstates.org` 301s to Plural Policy, so the Open States listing now
+  points at open.pluralpolicy.com, where the bulk data and API keys live.
+  `lastVerified` rolled forward to 2026-09-27.
 - 2026-09-26: re-checked all 36 listing URLs (46 unique after dedupe, four
   requests at a time). Every one answered: 45 with HTTP 200 and eia.gov
   with a 503 to a bare scripted user-agent but 200 to a browser user-agent,

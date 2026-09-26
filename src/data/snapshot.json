@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-25T16:41:31.359Z",
+  "exportedAt": "2026-09-26T15:39:34.837Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -12,14 +12,14 @@
       "location": "Washington, DC",
       "lat": 38.9072,
       "lng": -77.0369,
-      "website": "https://www.data.gov/",
+      "website": "https://data.gov/",
       "categories": ["catalog", "api"],
       "description": "US federal open data catalog. 200,000+ datasets via catalog.data.gov, CKAN API, and the DCAT metadata standard.",
       "source": {
         "label": "data.gov",
-        "url": "https://www.data.gov/developers/apis"
+        "url": "https://data.gov/developers/apis/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -41,7 +41,7 @@
         "label": "api.data.gov",
         "url": "https://api.data.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -63,7 +63,7 @@
         "label": "Census Bureau",
         "url": "https://www.census.gov/data/developers/data-sets.html"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -78,14 +78,14 @@
       "location": "Washington, DC",
       "lat": 38.9072,
       "lng": -77.0369,
-      "website": "https://data.bls.gov/developers/",
+      "website": "https://www.bls.gov/developers/",
       "categories": ["statistics", "economy", "api"],
       "description": "Bureau of Labor Statistics API: CPI, unemployment, payrolls, producer prices, and other labor market series with a free API key.",
       "source": {
         "label": "BLS",
-        "url": "https://data.bls.gov/developers/"
+        "url": "https://www.bls.gov/developers/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -107,7 +107,7 @@
         "label": "BEA",
         "url": "https://apps.bea.gov/api/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -129,7 +129,7 @@
         "label": "EIA",
         "url": "https://www.eia.gov/opendata/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -151,7 +151,7 @@
         "label": "USGS",
         "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -173,7 +173,7 @@
         "label": "NOAA",
         "url": "https://www.noaa.gov/data"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -196,7 +196,7 @@
         "label": "EPA",
         "url": "https://data.epa.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -218,7 +218,7 @@
         "label": "CDC",
         "url": "https://data.cdc.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -240,7 +240,7 @@
         "label": "IRS",
         "url": "https://www.irs.gov/statistics"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -262,7 +262,7 @@
         "label": "US Department of Education",
         "url": "https://data.ed.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -285,7 +285,7 @@
         "label": "BJS",
         "url": "https://bjs.ojp.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -307,7 +307,7 @@
         "label": "FEMA",
         "url": "https://www.fema.gov/about/reports-and-data/openfema"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -329,7 +329,7 @@
         "label": "NASA",
         "url": "https://api.nasa.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -351,7 +351,7 @@
         "label": "US DOT",
         "url": "https://www.transportation.gov/data"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -373,7 +373,7 @@
         "label": "FCC",
         "url": "https://opendata.fcc.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -393,9 +393,9 @@
       "description": "Official rules, proposed rules, and notices from federal agencies with a free public JSON API, no key required.",
       "source": {
         "label": "Federal Register",
-        "url": "https://www.federalregister.gov/developers/api/v1"
+        "url": "https://www.federalregister.gov/developers/documentation/api/v1"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -408,14 +408,14 @@
       "city": "United States",
       "region": "United States",
       "location": "All 50 states",
-      "website": "https://openstates.org/",
+      "website": "https://open.pluralpolicy.com/",
       "categories": ["government", "api"],
-      "description": "Nonprofit aggregator of US state legislative data: bills, votes, and legislators for all 50 states, DC, and Puerto Rico in one API.",
+      "description": "State legislative data for all 50 states, DC, and Puerto Rico: bills, votes, and legislators, from the Open States project that Plural Policy adopted in 2021. Bulk downloads and API key registration moved to open.pluralpolicy.com, and openstates.org now redirects to the Plural site.",
       "source": {
-        "label": "Open States",
-        "url": "https://openstates.org/"
+        "label": "Plural Policy (Open States)",
+        "url": "https://open.pluralpolicy.com/data"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -430,19 +430,19 @@
       "location": "Washington, DC",
       "lat": 38.9072,
       "lng": -77.0369,
-      "website": "https://sam.gov/content/entity-information",
+      "website": "https://sam.gov/entity-information",
       "categories": ["business", "government", "catalog"],
       "description": "Federal procurement system of record: entity registrations, contract awards, and assistance data, browsable at sam.gov and via API.",
       "source": {
         "label": "GSA",
         "url": "https://open.gsa.gov/api/entity-api/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
       "calendarDates": [],
-      "notes": "sam.gov timed out on automated checks from this host on 2026-09-23 and returned 200 on 2026-09-24; the GSA Entity Management API docs linked here return 200."
+      "notes": "sam.gov answered a browser user agent here, but it has timed out on scripted checks from this host (2026-09-23); the GSA Entity Management API docs linked as the source return 200."
     },
     {
       "id": "usaspending-api",
@@ -460,7 +460,7 @@
         "label": "US Department of the Treasury",
         "url": "https://api.usaspending.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -482,7 +482,7 @@
         "label": "US Department of the Treasury",
         "url": "https://fiscaldata.treasury.gov/api-documentation/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -504,7 +504,7 @@
         "label": "US Food and Drug Administration",
         "url": "https://open.fda.gov/apis/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -526,7 +526,7 @@
         "label": "US National Institutes of Health",
         "url": "https://api.reporter.nih.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -541,18 +541,19 @@
       "location": "New York City",
       "lat": 40.7128,
       "lng": -74.006,
-      "website": "https://data.cityofnewyork.us/",
+      "website": "https://www.nyc.gov/opendata",
       "categories": ["catalog", "api", "transport"],
       "description": "New York City Socrata portal: 3,000+ datasets from 40+ agencies, covering permits, 311, taxi trips, and building data.",
       "source": {
         "label": "NYC Open Data",
         "url": "https://data.cityofnewyork.us/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
-      "calendarDates": []
+      "calendarDates": [],
+      "notes": "The city now serves the portal UI from nyc.gov/opendata; data.cityofnewyork.us still answers Socrata API queries and redirects browsers to the new address."
     },
     {
       "id": "new-york-state-open-data",
@@ -570,7 +571,7 @@
         "label": "New York State",
         "url": "https://data.ny.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -592,7 +593,7 @@
         "label": "State of California",
         "url": "https://data.ca.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -614,7 +615,7 @@
         "label": "City of Chicago",
         "url": "https://data.cityofchicago.org/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -636,7 +637,7 @@
         "label": "City of Los Angeles",
         "url": "https://data.lacity.org/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -658,7 +659,7 @@
         "label": "City of Seattle",
         "url": "https://data.seattle.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -680,7 +681,7 @@
         "label": "State of Texas",
         "url": "https://data.texas.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -702,7 +703,7 @@
         "label": "State of Colorado",
         "url": "https://data.colorado.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -724,7 +725,7 @@
         "label": "State of Washington",
         "url": "https://data.wa.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -746,7 +747,7 @@
         "label": "SEC",
         "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -768,7 +769,7 @@
         "label": "CMS",
         "url": "https://data.cms.gov/provider-data/docs"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -790,7 +791,7 @@
         "label": "State of Michigan",
         "url": "https://data.michigan.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -812,7 +813,7 @@
         "label": "FDIC",
         "url": "https://api.fdic.gov/banks/docs"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -834,7 +835,7 @@
         "label": "USDA NASS",
         "url": "https://quickstats.nass.usda.gov/api"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
@@ -856,7 +857,7 @@
         "label": "City and County of San Francisco",
         "url": "https://data.sf.gov/"
       },
-      "lastVerified": "2026-09-26",
+      "lastVerified": "2026-09-27",
       "verified": true,
       "active": true,
       "optOut": false,
