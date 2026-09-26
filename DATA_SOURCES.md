@@ -33,6 +33,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `USDA NASS Quick Stats API` | crop, livestock, price, and county estimates (quickstats.nass.usda.gov) | ✅ planned |
 | `San Francisco Open Data` | city department datasets on data.sf.gov (Socrata) | ✅ planned |
 | `FRED` | US and international economic time series on api.stlouisfed.org (St. Louis Fed) | ✅ planned |
+| `OpenFEC API` | FEC campaign finance records on api.open.fec.gov | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

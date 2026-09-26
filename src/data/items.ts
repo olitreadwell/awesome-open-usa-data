@@ -708,6 +708,23 @@ const rawItems = [
     lastVerified: '2026-09-27',
     verified: true,
   },
+  {
+    id: 'openfec-api',
+    slug: 'openfec-api',
+    name: 'OpenFEC API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      "The Federal Election Commission's campaign finance data: candidate and committee registrations, filings, itemized contributions and disbursements, independent expenditures, audit cases, and legal records such as advisory opinions and enforcement matters. The REST API runs on api.data.gov behind a free key, and the FEC republishes the same extracts as bulk downloads.",
+    categories: ['government', 'finance', 'api'],
+    website: 'https://www.fec.gov/data/',
+    source: { label: 'Federal Election Commission', url: 'https://api.open.fec.gov/developers/' },
+    lastVerified: '2026-09-27',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
