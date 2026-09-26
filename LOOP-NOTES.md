@@ -84,6 +84,44 @@ per iteration, plus a fuller entry when something blocks the loop.
   links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
   in CI on the push.
 
+## 2026-09-27
+
+- Link sweep of every listing (42 listings, 53 unique URLs after dedupe, four
+  requests at a time): all 53 answered 200, including `data.ed.gov` (the
+  long-running bot-protection 403) and `eia.gov`, which answered a bare fetch
+  this run. Four addresses now redirect and are stored at the destination:
+  `www.data.gov` to `data.gov`, `data.bls.gov/developers/` to
+  `www.bls.gov/developers/`, the Federal Register API docs path, and
+  `sam.gov/content/entity-information` to `sam.gov/entity-information`.
+  `lastVerified` rolled forward to 2026-09-27 (`6ea84b3`).
+- Two listings had actually moved. `data.cityofnewyork.us` 301s to
+  `nyc.gov/opendata`, so the website field points at the city's new portal
+  while the source stays on the Socrata API host, which still returns JSON for
+  `resource/erm2-nwe9.json`. `openstates.org` 301s to `pluralpolicy.com/open`,
+  and the Open States data now lives at `open.pluralpolicy.com` (bulk data page
+  plus API key registration, both 200 without auth), so the listing points
+  there and the description no longer calls the project a nonprofit.
+- Shipped three sources, each checked live before adding, including the API
+  surface rather than just the landing page: `FRED (Federal Reserve Economic
+  Data)` (`b6d7195`), `OpenFEC API` (`74789ec`), and `GovInfo API`
+  (`f47310a`). Evidence behind each: FRED's own meta description states
+  853,000 series from 126 sources, `fred.stlouisfed.org` and the v1/v2 API
+  docs return 200, and `api.stlouisfed.org/fred/series` returns 400 without a
+  valid key, which proves the endpoint is live and key-gated; the FEC's
+  `/committees/`, `/filings/`, `/schedules/schedule_a`, `schedule_b`,
+  `schedule_e`, `/audit-case/`, and `/legal/search/` endpoints all return JSON
+  with DEMO_KEY (the 429 "rate limit of 40 calls per hour for the DEMO_KEY"
+  confirms the key gate), and the bulk data page at `fec.gov/data` returns
+  200; `api.govinfo.gov/collections` returns the full collection list with
+  DEMO_KEY (BILLS, BILLSTATUS, CREC, FR, CFR, USCODE, PLAW, USCOURTS, BUDGET,
+  and more), with the docs and bulk data pages returning 200 beside it.
+- NREL was checked as a fourth candidate and skipped: `nrel.gov` and
+  `developer.nrel.gov` do not resolve from this host, so it stays a planned
+  source in `DATA_SOURCES.md` rather than a listing.
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
+
 ## 2026-09-26
 
 - Link sweep of every listed URL (46 unique after dedupe, four requests at a
