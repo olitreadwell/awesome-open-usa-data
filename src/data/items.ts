@@ -688,6 +688,26 @@ const rawItems = [
     lastVerified: '2026-09-27',
     verified: true,
   },
+  {
+    id: 'fred-economic-data',
+    slug: 'fred-economic-data',
+    name: 'FRED (Federal Reserve Economic Data)',
+    city: 'St. Louis',
+    region: 'Missouri',
+    location: 'Federal Reserve Bank of St. Louis',
+    lat: 38.627,
+    lng: -90.1994,
+    description:
+      'Economic time series from the Federal Reserve Bank of St. Louis: the catalog counts 853,000 series drawn from 126 sources, covering GDP, prices, employment, interest rates, and banking. The REST API at api.stlouisfed.org returns series metadata, observations, search results, and release dates with a free key, and ALFRED serves each series as it was first published.',
+    categories: ['statistics', 'economy', 'api'],
+    website: 'https://fred.stlouisfed.org/',
+    source: {
+      label: 'Federal Reserve Bank of St. Louis',
+      url: 'https://fred.stlouisfed.org/docs/api/fred/',
+    },
+    lastVerified: '2026-09-27',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

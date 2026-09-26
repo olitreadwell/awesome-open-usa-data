@@ -39,6 +39,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-27: `FRED (Federal Reserve Economic Data)` (fred.stlouisfed.org,
+  api.stlouisfed.org) added to the dataset.
 - 2026-09-26: `San Francisco Open Data` (data.sf.gov, the new home of
   data.sfgov.org) added to the dataset.
 - 2026-09-26: `USDA NASS Quick Stats API` (quickstats.nass.usda.gov)

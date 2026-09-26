@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-26T15:39:34.837Z",
+  "exportedAt": "2026-09-26T15:40:10.634Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -856,6 +856,28 @@
       "source": {
         "label": "City and County of San Francisco",
         "url": "https://data.sf.gov/"
+      },
+      "lastVerified": "2026-09-27",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "fred-economic-data",
+      "name": "FRED (Federal Reserve Economic Data)",
+      "slug": "fred-economic-data",
+      "city": "St. Louis",
+      "region": "Missouri",
+      "location": "Federal Reserve Bank of St. Louis",
+      "lat": 38.627,
+      "lng": -90.1994,
+      "website": "https://fred.stlouisfed.org/",
+      "categories": ["statistics", "economy", "api"],
+      "description": "Economic time series from the Federal Reserve Bank of St. Louis: the catalog counts 853,000 series drawn from 126 sources, covering GDP, prices, employment, interest rates, and banking. The REST API at api.stlouisfed.org returns series metadata, observations, search results, and release dates with a free key, and ALFRED serves each series as it was first published.",
+      "source": {
+        "label": "Federal Reserve Bank of St. Louis",
+        "url": "https://fred.stlouisfed.org/docs/api/fred/"
       },
       "lastVerified": "2026-09-27",
       "verified": true,
