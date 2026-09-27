@@ -44,6 +44,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-28: `Smithsonian Open Access` (api.si.edu EDAN Open Access API,
+  bulk files on the AWS Open Data registry) added to the dataset.
 - 2026-09-28: `USDA FoodData Central` (fdc.nal.usda.gov, API at
   api.nal.usda.gov/fdc/v1) added to the dataset.
 - 2026-09-28: `National Weather Service API` (api.weather.gov, documented at

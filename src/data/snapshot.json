@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-27T15:39:25.495Z",
+  "exportedAt": "2026-09-27T15:39:40.329Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -966,6 +966,28 @@
       "source": {
         "label": "USDA Agricultural Research Service",
         "url": "https://fdc.nal.usda.gov/api-guide/"
+      },
+      "lastVerified": "2026-09-28",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "smithsonian-open-access",
+      "name": "Smithsonian Open Access",
+      "slug": "smithsonian-open-access",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.8888,
+      "lng": -77.026,
+      "website": "https://edan.si.edu/openaccess/apidocs/",
+      "categories": ["culture", "catalog", "api"],
+      "description": "CC0 object records and media from the Smithsonian's museums, archives, and research centers: specimen and catalogue metadata, images, library volumes, and research data. The EDAN Open Access API at api.si.edu takes an api.data.gov key and its stats endpoint publishes CC0 record counts per unit each month (48 units in September 2026); the same release is on the AWS Open Data registry as bulk files.",
+      "source": {
+        "label": "Smithsonian Institution",
+        "url": "https://registry.opendata.aws/smithsonian-open-access/"
       },
       "lastVerified": "2026-09-28",
       "verified": true,

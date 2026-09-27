@@ -782,6 +782,26 @@ const rawItems = [
     lastVerified: '2026-09-28',
     verified: true,
   },
+  {
+    id: 'smithsonian-open-access',
+    slug: 'smithsonian-open-access',
+    name: 'Smithsonian Open Access',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.8888,
+    lng: -77.026,
+    description:
+      "CC0 object records and media from the Smithsonian's museums, archives, and research centers: specimen and catalogue metadata, images, library volumes, and research data. The EDAN Open Access API at api.si.edu takes an api.data.gov key and its stats endpoint publishes CC0 record counts per unit each month (48 units in September 2026); the same release is on the AWS Open Data registry as bulk files.",
+    categories: ['culture', 'catalog', 'api'],
+    website: 'https://edan.si.edu/openaccess/apidocs/',
+    source: {
+      label: 'Smithsonian Institution',
+      url: 'https://registry.opendata.aws/smithsonian-open-access/',
+    },
+    lastVerified: '2026-09-28',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
