@@ -111,8 +111,8 @@ per iteration, plus a fuller entry when something blocks the loop.
   site root and on `/api-documentation`, so the listing points at
   `/provider-data/` and `/provider-data/docs`, both 200 from this host.
 - `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
-  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
-  in CI on the push.
+  links, build) with the tree clean afterwards. The full suite ran on the push
+  to `main` (`12a2dac`): CI, Quality Gates, Docker, and Security all passed.
 
 ## 2026-09-27
 
