@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-27T15:38:42.624Z",
+  "exportedAt": "2026-09-27T15:39:08.742Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -922,6 +922,28 @@
       "source": {
         "label": "US Government Publishing Office",
         "url": "https://api.govinfo.gov/docs/"
+      },
+      "lastVerified": "2026-09-28",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "national-weather-service-api",
+      "name": "National Weather Service API",
+      "slug": "national-weather-service-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Silver Spring, MD",
+      "lat": 38.9907,
+      "lng": -77.0261,
+      "website": "https://api.weather.gov/",
+      "categories": ["weather", "geospatial", "api"],
+      "description": "The National Weather Service's public forecast and hazard service at api.weather.gov: point forecasts and hourly forecasts, active watches, warnings and advisories, observations from surface stations, radar and marine products, and climate reports. Every endpoint answers GeoJSON without an API key, and the service asks only that callers send a User-Agent that identifies their application.",
+      "source": {
+        "label": "National Weather Service",
+        "url": "https://www.weather.gov/documentation/services-web-api"
       },
       "lastVerified": "2026-09-28",
       "verified": true,

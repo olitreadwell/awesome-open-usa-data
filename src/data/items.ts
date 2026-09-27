@@ -742,8 +742,27 @@ const rawItems = [
     lastVerified: '2026-09-28',
     verified: true,
   },
+  {
+    id: 'national-weather-service-api',
+    slug: 'national-weather-service-api',
+    name: 'National Weather Service API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Silver Spring, MD',
+    lat: 38.9907,
+    lng: -77.0261,
+    description:
+      "The National Weather Service's public forecast and hazard service at api.weather.gov: point forecasts and hourly forecasts, active watches, warnings and advisories, observations from surface stations, radar and marine products, and climate reports. Every endpoint answers GeoJSON without an API key, and the service asks only that callers send a User-Agent that identifies their application.",
+    categories: ['weather', 'geospatial', 'api'],
+    website: 'https://api.weather.gov/',
+    source: {
+      label: 'National Weather Service',
+      url: 'https://www.weather.gov/documentation/services-web-api',
+    },
+    lastVerified: '2026-09-28',
+    verified: true,
+  },
 ] as const;
-
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
 export const seedItems: Item[] = itemListSchema.parse(rawItems);

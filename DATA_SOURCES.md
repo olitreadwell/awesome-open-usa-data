@@ -35,6 +35,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `FRED` | US and international economic time series on api.stlouisfed.org (St. Louis Fed) | ✅ planned |
 | `OpenFEC API` | FEC campaign finance records on api.open.fec.gov | ✅ planned |
 | `GovInfo API` | GPO federal publications on api.govinfo.gov (bills, Federal Register, US Code) | ✅ planned |
+| `National Weather Service API` | forecasts, alerts, and station observations on api.weather.gov (NOAA) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis
