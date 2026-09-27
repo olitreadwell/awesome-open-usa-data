@@ -36,6 +36,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `OpenFEC API` | FEC campaign finance records on api.open.fec.gov | ✅ planned |
 | `GovInfo API` | GPO federal publications on api.govinfo.gov (bills, Federal Register, US Code) | ✅ planned |
 | `National Weather Service API` | forecasts, alerts, and station observations on api.weather.gov (NOAA) | ✅ planned |
+| `USDA FoodData Central` | food and nutrient records with a keyed search API (USDA ARS) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

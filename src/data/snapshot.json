@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-27T15:39:08.742Z",
+  "exportedAt": "2026-09-27T15:39:25.495Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -944,6 +944,28 @@
       "source": {
         "label": "National Weather Service",
         "url": "https://www.weather.gov/documentation/services-web-api"
+      },
+      "lastVerified": "2026-09-28",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "usda-fooddata-central",
+      "name": "USDA FoodData Central",
+      "slug": "usda-fooddata-central",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Beltsville, MD",
+      "lat": 39.0348,
+      "lng": -76.9075,
+      "website": "https://fdc.nal.usda.gov/",
+      "categories": ["health", "statistics", "api"],
+      "description": "USDA nutrition data: Foundation Foods with analytically measured nutrient values, SR Legacy, Branded Foods built from manufacturer labels, and the Food and Nutrient Database for Dietary Studies behind national dietary research. The REST API at api.nal.usda.gov/fdc/v1 searches foods and returns their nutrient values, with a DEMO_KEY for light use, and USDA republishes the whole release as CSV and JSON bulk downloads.",
+      "source": {
+        "label": "USDA Agricultural Research Service",
+        "url": "https://fdc.nal.usda.gov/api-guide/"
       },
       "lastVerified": "2026-09-28",
       "verified": true,

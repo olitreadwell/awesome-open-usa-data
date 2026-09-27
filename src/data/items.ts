@@ -762,6 +762,26 @@ const rawItems = [
     lastVerified: '2026-09-28',
     verified: true,
   },
+  {
+    id: 'usda-fooddata-central',
+    slug: 'usda-fooddata-central',
+    name: 'USDA FoodData Central',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Beltsville, MD',
+    lat: 39.0348,
+    lng: -76.9075,
+    description:
+      'USDA nutrition data: Foundation Foods with analytically measured nutrient values, SR Legacy, Branded Foods built from manufacturer labels, and the Food and Nutrient Database for Dietary Studies behind national dietary research. The REST API at api.nal.usda.gov/fdc/v1 searches foods and returns their nutrient values, with a DEMO_KEY for light use, and USDA republishes the whole release as CSV and JSON bulk downloads.',
+    categories: ['health', 'statistics', 'api'],
+    website: 'https://fdc.nal.usda.gov/',
+    source: {
+      label: 'USDA Agricultural Research Service',
+      url: 'https://fdc.nal.usda.gov/api-guide/',
+    },
+    lastVerified: '2026-09-28',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
