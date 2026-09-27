@@ -3,6 +3,36 @@
 Dated log for the daily grow loop (`scripts/grow-loop-prompt.txt`). One line
 per iteration, plus a fuller entry when something blocks the loop.
 
+## 2026-09-28
+
+- Link sweep of all 42 listings (59 unique URLs after dedupe, four requests at
+  a time): every URL answered 200 on the first pass, `data.ed.gov` included,
+  and `data.cityofnewyork.us` still redirects to `nyc.gov/opendata`.
+  `lastVerified` rolled forward to 2026-09-28 (`4630e32`).
+- Shipped three sources, each checked live before adding, including the API
+  surface rather than just the landing page: `National Weather Service API`
+  (`0aff485`), `USDA FoodData Central` (`5f969fe`), and `Smithsonian Open
+  Access` (`e106eb8`). Evidence behind each: `api.weather.gov/points/38.8977,-77.0365`
+  and `api.weather.gov/alerts/active?area=DC` return GeoJSON with no key
+  (the alerts call returned an empty FeatureCollection, so the payload shape
+  came from the points call); `api.nal.usda.gov/fdc/v1/foods/search` returns
+  19,300 hits for "cheddar" with DEMO_KEY and the download page lists CSV and
+  JSON bulk files; the Smithsonian EDAN search returns rows for `q=panda`
+  with DEMO_KEY, its stats endpoint reported 48 units for 2026-09, and the AWS
+  Open Data registry page for the bulk release returns 200. The six URLs those
+  three listings add were checked by hand today on top of the 59 in the sweep.
+- Candidates checked and skipped. `data.maryland.gov` 301s to a DoIT page and
+  the Socrata domain now answers `Cannot find domain with name
+  data.maryland.gov`, so Maryland's portal has moved or shut and nothing was
+  added. NARA's catalog API returned HTML at `catalog.archives.gov/api/v2` and
+  the API help page 404s, so it waits for a documented endpoint. NCEI's Climate
+  Data Online is live and key-gated (`api/v2/datasets` answers 400 "Token
+  parameter is required") but NOAA already has a listing, so it stays out for
+  now.
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
+
 ## 2026-09-23
 
 - 2026-09-24 iteration. Link sweep of all 30 sources (website plus source URL,
