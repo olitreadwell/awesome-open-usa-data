@@ -53,6 +53,13 @@ All notable changes documented here. Format follows
   api.data.gov) added to the dataset.
 - 2026-09-29: `Regulations.gov API` (api.regulations.gov v4, documented at
   open.gsa.gov/api/regulationsgov) added to the dataset.
+- 2026-09-29: `FBI Crime Data Explorer API` (api.usa.gov/crime/fbi/cde)
+  added to the dataset.
+
+- 2026-09-29: `Congress.gov API` (api.congress.gov/v3, key from
+  api.data.gov) added to the dataset.
+- 2026-09-29: `Regulations.gov API` (api.regulations.gov v4, documented at
+  open.gsa.gov/api/regulationsgov) added to the dataset.
 - 2026-09-29: `Congress.gov API` (api.congress.gov/v3, key from
   api.data.gov) added to the dataset.
 - 2026-09-28: `Smithsonian Open Access` (api.si.edu EDAN Open Access API,

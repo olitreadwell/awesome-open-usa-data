@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-28T21:15:23.161Z",
+  "exportedAt": "2026-09-28T21:19:16.883Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1032,6 +1032,28 @@
       "source": {
         "label": "GSA",
         "url": "https://open.gsa.gov/api/regulationsgov/"
+      },
+      "lastVerified": "2026-09-29",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "fbi-crime-data-explorer-api",
+      "name": "FBI Crime Data Explorer API",
+      "slug": "fbi-crime-data-explorer-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.8948,
+      "lng": -77.0247,
+      "website": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi",
+      "categories": ["crime", "statistics", "api"],
+      "description": "Uniform Crime Reporting data behind the FBI Crime Data Explorer. The summarized endpoints return monthly offense rates for the nation, a state, or a single agency from a from/to date range, with a free api.data.gov key.",
+      "source": {
+        "label": "FBI",
+        "url": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi"
       },
       "lastVerified": "2026-09-29",
       "verified": true,

@@ -836,6 +836,23 @@ const rawItems = [
     lastVerified: '2026-09-29',
     verified: true,
   },
+  {
+    id: 'fbi-crime-data-explorer-api',
+    slug: 'fbi-crime-data-explorer-api',
+    name: 'FBI Crime Data Explorer API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.8948,
+    lng: -77.0247,
+    description:
+      'Uniform Crime Reporting data behind the FBI Crime Data Explorer. The summarized endpoints return monthly offense rates for the nation, a state, or a single agency from a from/to date range, with a free api.data.gov key.',
+    categories: ['crime', 'statistics', 'api'],
+    website: 'https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi',
+    source: { label: 'FBI', url: 'https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi' },
+    lastVerified: '2026-09-29',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
