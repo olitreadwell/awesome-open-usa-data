@@ -7,6 +7,11 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-09-29: re-checked every listing URL and source link, 65 unique
+  addresses after dedupe, four requests at a time. All 65 answered 200 on
+  the first pass, so no URL changed and `lastVerified` rolled forward to
+  2026-09-29 across the set. `data.cityofnewyork.us` still redirects to
+  nyc.gov/opendata, the move recorded on 2026-09-27.
 - 2026-09-28: re-checked every listing URL and source link, 59 unique
   addresses after dedupe, four requests at a time. All 59 answered 200 on the
   first pass, so no URL changed and `lastVerified` rolled forward to
