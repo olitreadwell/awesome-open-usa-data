@@ -184,3 +184,32 @@ per iteration, plus a fuller entry when something blocks the loop.
 - `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
   links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
   in CI on the push.
+
+## 2026-09-29
+
+- Link sweep of all 45 listings (65 unique URLs after dedupe, four requests
+  at a time): every URL answered 200 on the first pass, `data.ed.gov`
+  included, and `data.cityofnewyork.us` still redirects to `nyc.gov/opendata`.
+  `lastVerified` rolled forward to 2026-09-29 (`311fd2c`).
+- Shipped three sources, each checked live including the API surface rather
+  than just the landing page: `Congress.gov API` (`c4f9f39`),
+  `Regulations.gov API` (`5dc8070`), and `FBI Crime Data Explorer API`
+  (`c518852`). Evidence behind each: `api.congress.gov/v3/bill/119/hr/1` and
+  `/v3/bill?limit=2` return JSON with DEMO_KEY, and the API page publishes the
+  v3 OpenAPI spec (bills, amendments, members, House roll-call votes,
+  committees, Congressional Record, nominations, treaties, CRS reports, 250
+  records per page max); `api.regulations.gov/v4/documents/EPA-HQ-OAR-2021-0317-0001`
+  returns docket document metadata with DEMO_KEY and the GSA docs page lists
+  document, comment, and docket endpoints plus comment submission, backed by an
+  OpenAPI spec; the CDE summarized endpoints return monthly offense rates for
+  `national/violent-crime`, `state/CA/violent-crime`, and
+  `agency/CA0010000/violent-crime` with DEMO_KEY. A later CDE call answered
+  `OVER_RATE_LIMIT` on the shared demo key, so the API is live and
+  rate-limited rather than key-free.
+- The first `pnpm run check:fast` attempt failed on a 15s timeout in
+  `src/lib/db-mode.test.ts` while the machine sat at load average 47. The same
+  file passed alone in 2.6s and the full check passed on the next run, so no
+  test or timeout was changed for it.
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
