@@ -819,6 +819,23 @@ const rawItems = [
     lastVerified: '2026-09-29',
     verified: true,
   },
+  {
+    id: 'regulations-gov-api',
+    slug: 'regulations-gov-api',
+    name: 'Regulations.gov API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.8971,
+    lng: -77.0421,
+    description:
+      'Federal rulemaking records from the GSA-run Regulations.gov: dockets, documents, and public comments, with search and detail endpoints plus comment submission. The v4 API is documented at open.gsa.gov/api/regulationsgov with an OpenAPI specification, and DEMO_KEY works for a first call.',
+    categories: ['government', 'regulation', 'api'],
+    website: 'https://www.regulations.gov/',
+    source: { label: 'GSA', url: 'https://open.gsa.gov/api/regulationsgov/' },
+    lastVerified: '2026-09-29',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

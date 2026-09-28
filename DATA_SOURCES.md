@@ -39,6 +39,8 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `USDA FoodData Central` | food and nutrient records with a keyed search API (USDA ARS) | ✅ planned |
 | `Smithsonian Open Access` | CC0 collection records and media from api.si.edu (Smithsonian) | ✅ planned |
 | `Congress.gov API` | congressional bills, amendments, roll-call votes, and the Congressional Record on api.congress.gov/v3 (Library of Congress) | ✅ planned |
+| `Congress.gov API` | congressional bills, amendments, roll-call votes, and the Congressional Record on api.congress.gov/v3 (Library of Congress) | ✅ planned |
+| `Regulations.gov API` | federal dockets, documents, and public comments on api.regulations.gov (GSA) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

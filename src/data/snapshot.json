@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-28T21:15:05.305Z",
+  "exportedAt": "2026-09-28T21:15:23.161Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1010,6 +1010,28 @@
       "source": {
         "label": "Library of Congress",
         "url": "https://api.congress.gov/"
+      },
+      "lastVerified": "2026-09-29",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "regulations-gov-api",
+      "name": "Regulations.gov API",
+      "slug": "regulations-gov-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.8971,
+      "lng": -77.0421,
+      "website": "https://www.regulations.gov/",
+      "categories": ["government", "regulation", "api"],
+      "description": "Federal rulemaking records from the GSA-run Regulations.gov: dockets, documents, and public comments, with search and detail endpoints plus comment submission. The v4 API is documented at open.gsa.gov/api/regulationsgov with an OpenAPI specification, and DEMO_KEY works for a first call.",
+      "source": {
+        "label": "GSA",
+        "url": "https://open.gsa.gov/api/regulationsgov/"
       },
       "lastVerified": "2026-09-29",
       "verified": true,
