@@ -38,6 +38,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `National Weather Service API` | forecasts, alerts, and station observations on api.weather.gov (NOAA) | ✅ planned |
 | `USDA FoodData Central` | food and nutrient records with a keyed search API (USDA ARS) | ✅ planned |
 | `Smithsonian Open Access` | CC0 collection records and media from api.si.edu (Smithsonian) | ✅ planned |
+| `Congress.gov API` | congressional bills, amendments, roll-call votes, and the Congressional Record on api.congress.gov/v3 (Library of Congress) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-28T20:58:13.899Z",
+  "exportedAt": "2026-09-28T21:15:05.305Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -988,6 +988,28 @@
       "source": {
         "label": "Smithsonian Institution",
         "url": "https://registry.opendata.aws/smithsonian-open-access/"
+      },
+      "lastVerified": "2026-09-29",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "congress-gov-api",
+      "name": "Congress.gov API",
+      "slug": "congress-gov-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.8887,
+      "lng": -77.0046,
+      "website": "https://api.congress.gov/",
+      "categories": ["government", "api"],
+      "description": "Library of Congress API over congressional data: bills and their actions, amendments, Member records, House roll-call votes, committees, the Congressional Record, nominations, treaties, and CRS reports. JSON or XML on api.congress.gov/v3, up to 250 records per page, with a free key from api.data.gov.",
+      "source": {
+        "label": "Library of Congress",
+        "url": "https://api.congress.gov/"
       },
       "lastVerified": "2026-09-29",
       "verified": true,

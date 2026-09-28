@@ -802,6 +802,23 @@ const rawItems = [
     lastVerified: '2026-09-29',
     verified: true,
   },
+  {
+    id: 'congress-gov-api',
+    slug: 'congress-gov-api',
+    name: 'Congress.gov API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.8887,
+    lng: -77.0046,
+    description:
+      'Library of Congress API over congressional data: bills and their actions, amendments, Member records, House roll-call votes, committees, the Congressional Record, nominations, treaties, and CRS reports. JSON or XML on api.congress.gov/v3, up to 250 records per page, with a free key from api.data.gov.',
+    categories: ['government', 'api'],
+    website: 'https://api.congress.gov/',
+    source: { label: 'Library of Congress', url: 'https://api.congress.gov/' },
+    lastVerified: '2026-09-29',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
