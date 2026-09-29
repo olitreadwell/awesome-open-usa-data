@@ -43,6 +43,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `FBI Crime Data Explorer API` | monthly Uniform Crime Reporting offense rates by nation, state, and agency (FBI) | ✅ planned |
 | `Oregon Open Data` | state agency datasets on data.oregon.gov (Socrata) | ✅ planned |
 | `NHTSA Vehicle APIs` | vehicle recalls, complaints, ratings, and VIN decoding on api.nhtsa.gov (NHTSA) | ✅ planned |
+| `CFPB Open Data` | consumer complaints, HMDA mortgage data, and small business lending on consumerfinance.gov (CFPB) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-29T21:10:39.278Z",
+  "exportedAt": "2026-09-29T21:10:54.578Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1106,6 +1106,29 @@
       "optOut": false,
       "calendarDates": [],
       "notes": "The datasets and APIs page answers scripted checks with 403 (bot protection) but renders in a browser, checked in Chrome on 2026-09-30; the endpoints themselves answer a declared user-agent."
+    },
+    {
+      "id": "cfpb-open-data",
+      "name": "CFPB Open Data",
+      "slug": "cfpb-open-data",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://www.consumerfinance.gov/data-research/",
+      "categories": ["finance", "consumer", "api"],
+      "description": "Consumer Financial Protection Bureau data products: the public Consumer Complaint Database (more than 18 million complaints, searchable as JSON through its search API), HMDA mortgage data, the small business lending database, and consumer credit trend dashboards.",
+      "source": {
+        "label": "CFPB",
+        "url": "https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/"
+      },
+      "lastVerified": "2026-09-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "consumerfinance.gov answers scripted checks with 403 (bot protection) and 200 to a request with a declared user-agent, which is how the complaint API and the data pages were checked on 2026-09-30."
     }
   ]
 }
