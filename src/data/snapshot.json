@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-29T21:10:17.191Z",
+  "exportedAt": "2026-09-29T21:10:39.278Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1083,6 +1083,29 @@
       "active": true,
       "optOut": false,
       "calendarDates": []
+    },
+    {
+      "id": "nhtsa-vehicle-apis",
+      "name": "NHTSA Vehicle APIs",
+      "slug": "nhtsa-vehicle-apis",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://api.nhtsa.gov/",
+      "categories": ["transport", "safety", "api"],
+      "description": "National Highway Traffic Safety Administration APIs on api.nhtsa.gov: recalls and safety complaints by make, model, and year, product model lists, NCAP safety ratings, and VIN decoding through vPIC, all JSON with no key.",
+      "source": {
+        "label": "NHTSA",
+        "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis"
+      },
+      "lastVerified": "2026-09-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "The datasets and APIs page answers scripted checks with 403 (bot protection) but renders in a browser, checked in Chrome on 2026-09-30; the endpoints themselves answer a declared user-agent."
     }
   ]
 }

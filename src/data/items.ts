@@ -879,6 +879,25 @@ const rawItems = [
     lastVerified: '2026-09-30',
     verified: true,
   },
+  {
+    id: 'nhtsa-vehicle-apis',
+    slug: 'nhtsa-vehicle-apis',
+    name: 'NHTSA Vehicle APIs',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'National Highway Traffic Safety Administration APIs on api.nhtsa.gov: recalls and safety complaints by make, model, and year, product model lists, NCAP safety ratings, and VIN decoding through vPIC, all JSON with no key.',
+    categories: ['transport', 'safety', 'api'],
+    website: 'https://api.nhtsa.gov/',
+    source: { label: 'NHTSA', url: 'https://www.nhtsa.gov/nhtsa-datasets-and-apis' },
+    lastVerified: '2026-09-30',
+    verified: true,
+    notes:
+      'The datasets and APIs page answers scripted checks with 403 (bot protection) but renders in a browser, checked in Chrome on 2026-09-30; the endpoints themselves answer a declared user-agent.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
