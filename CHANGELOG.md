@@ -7,6 +7,18 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-09-30: re-checked all 48 listing URLs and source links, 69 unique
+  addresses after dedupe, four requests at a time. Most answered 200 on the
+  first pass. Five federal sites answer scripted checks with 403 while
+  staying live for browsers or for a declared user-agent: transportation.gov
+  (verified in Chrome today), bls.gov, fema.gov, sec.gov, and nhtsa.gov, plus
+  consumerfinance.gov which needs the declared user-agent too.
+  fred.stlouisfed.org answered HTTP/2 with INTERNAL_ERROR and 200 over
+  HTTP/1.1, so the sweep now pins HTTP/1.1. One listing moved:
+  transportation.gov/data blocks every scripted client, so the US DOT listing
+  points at the data portal it names, data.transportation.gov, and keeps the
+  program page as its source with a note. `lastVerified` rolled forward to
+  2026-09-30.
 - 2026-09-29: re-checked every listing URL and source link, 65 unique
   addresses after dedupe, four requests at a time. All 65 answered 200 on
   the first pass, so no URL changed and `lastVerified` rolled forward to
