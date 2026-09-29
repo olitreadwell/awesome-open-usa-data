@@ -213,3 +213,46 @@ per iteration, plus a fuller entry when something blocks the loop.
 - `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
   links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
   in CI on the push.
+
+## 2026-09-30
+
+- Link sweep of all 48 listings (69 unique URLs after dedupe, four requests at
+  a time): 63 answered 200 on one of the passes today. The six that needed a
+  second look: `www.transportation.gov/data` returns 403 to every scripted
+  client, including a browser user-agent, and renders in Chrome (checked in a
+  real browser today), so after the fix below the listing points at
+  `data.transportation.gov`, the portal the page names; `bls.gov`, `fema.gov`,
+  `sec.gov` and `nhtsa.gov` return 403 to a browser user-agent and 200 to a
+  declared one; `www.consumerfinance.gov` behaves the same way.
+  `fred.stlouisfed.org` fails over HTTP/2 with INTERNAL_ERROR and answers 200
+  over HTTP/1.1. `api.nasa.gov`, `bjs.ojp.gov`, `cde.ucr.cjis.gov` and
+  `open.gsa.gov/api/regulationsgov/` timed out on the first pass and answered
+  200 on the retry, so those were load or network, not dead sites.
+  `lastVerified` rolled forward to 2026-09-30 (`7f372e1`).
+- The first sweep also produced bogus timings: curl reported `Operation timed
+  out after 900919 milliseconds` for requests that had failed within seconds.
+  The same requests re-run one at a time answered normally, so treat any
+  15-minute duration in a parallel sweep here as a clock artifact, not
+  evidence. Worth knowing before logging a false failure next iteration.
+- Shipped three sources, each checked live on its API surface rather than just
+  the landing page: `Oregon Open Data` (`a1480be`), `NHTSA Vehicle APIs`
+  (`3d269c3`), and `CFPB Open Data` (`3b1aea3`). Evidence behind each:
+  `data.oregon.gov/api/views.json` returns dataset records and a per-dataset
+  SODA query on `/resource/<id>.json` returns rows; `api.nhtsa.gov` returns 225
+  complaints and 5 recall campaigns for a 2020 Honda Civic, 31 models for the
+  model list, the rated model years from `SafetyRatings`, and 140 decoded
+  fields from vPIC, all with no key while the nhtsa.gov docs page needs a
+  browser or a declared user-agent; the CFPB complaint search API reports
+  `hits.total.value` of 18,062,308 and the data-research hub lists the
+  complaint database, HMDA data, and the small business lending database.
+- Candidates checked and skipped. `developer.nps.gov` (403 to every client
+  tried), `www.loc.gov/apis/` (403), `developer.nrel.gov` (no DNS answer at
+  all on this run), `data.usaid.gov` and `data.nj.gov` (timeouts),
+  `opendata.utah.gov` (400), and `www.osti.gov` (no answer) stay out until
+  they respond.
+- Tidied two artifacts of earlier runs in the same commit as the link fix:
+  the duplicated Congress.gov and Regulations.gov rows in the DATA_SOURCES
+  seed table and the repeated 2026-09-29 CHANGELOG entries.
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
