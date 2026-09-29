@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-29T21:09:27.667Z",
+  "exportedAt": "2026-09-29T21:10:17.191Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1055,6 +1055,28 @@
       "source": {
         "label": "FBI",
         "url": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi"
+      },
+      "lastVerified": "2026-09-30",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": []
+    },
+    {
+      "id": "oregon-open-data",
+      "name": "Oregon Open Data",
+      "slug": "oregon-open-data",
+      "city": "Salem",
+      "region": "Oregon",
+      "location": "Statewide",
+      "lat": 44.9429,
+      "lng": -123.0351,
+      "website": "https://data.oregon.gov/",
+      "categories": ["catalog", "api", "government"],
+      "description": "Oregon's state portal at data.oregon.gov: agency datasets on public safety, health and human services, education, business, and natural resources, published through Socrata SODA APIs with CSV, JSON, and XML exports.",
+      "source": {
+        "label": "State of Oregon",
+        "url": "https://data.oregon.gov/"
       },
       "lastVerified": "2026-09-30",
       "verified": true,

@@ -61,6 +61,7 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-09-30: `Oregon Open Data` (data.oregon.gov, Socrata SODA API) added to the dataset.
 - 2026-09-29: `Congress.gov API` (api.congress.gov/v3, key from
   api.data.gov) added to the dataset.
 - 2026-09-29: `Regulations.gov API` (api.regulations.gov v4, documented at

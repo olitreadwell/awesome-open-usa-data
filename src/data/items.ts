@@ -862,6 +862,23 @@ const rawItems = [
     lastVerified: '2026-09-30',
     verified: true,
   },
+  {
+    id: 'oregon-open-data',
+    slug: 'oregon-open-data',
+    name: 'Oregon Open Data',
+    city: 'Salem',
+    region: 'Oregon',
+    location: 'Statewide',
+    lat: 44.9429,
+    lng: -123.0351,
+    description:
+      "Oregon's state portal at data.oregon.gov: agency datasets on public safety, health and human services, education, business, and natural resources, published through Socrata SODA APIs with CSV, JSON, and XML exports.",
+    categories: ['catalog', 'api', 'government'],
+    website: 'https://data.oregon.gov/',
+    source: { label: 'State of Oregon', url: 'https://data.oregon.gov/' },
+    lastVerified: '2026-09-30',
+    verified: true,
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
