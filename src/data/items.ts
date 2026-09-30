@@ -920,6 +920,25 @@ const rawItems = [
     notes:
       'consumerfinance.gov answers scripted checks with 403 (bot protection) and 200 to a request with a declared user-agent, which is how the complaint API and the data pages were checked on 2026-09-30.',
   },
+  {
+    id: 'bts-transportation-statistics',
+    slug: 'bts-transportation-statistics',
+    name: 'Bureau of Transportation Statistics',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'The US DOT Bureau of Transportation Statistics portal at data.bts.gov: monthly transportation indicators, freight and supply-chain measures, and state-level transportation finance tables, published through Socrata SODA APIs with CSV and JSON downloads.',
+    categories: ['transport', 'statistics', 'api', 'government'],
+    website: 'https://data.bts.gov/',
+    source: { label: 'Bureau of Transportation Statistics', url: 'https://data.bts.gov/' },
+    lastVerified: '2026-10-01',
+    verified: true,
+    notes:
+      'data.bts.gov/api/views.json lists 585 datasets and a SODA query on /resource/crem-w557.json returns rows for Monthly Transportation Statistics; checked 2026-10-01.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
