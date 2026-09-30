@@ -79,13 +79,16 @@ async function main() {
 
   const datasetRes = await fetch(`${base}/api/v1/dataset`);
   const dataset = await datasetRes.json();
-  check(dataset.items?.length === items.data.length, 'dataset.items == /items count');
+  // /api/v1/items is paginated (50 by default) while the dataset export is
+  // not, so compare the export against meta.total rather than one page.
+  const totalItems = items.meta?.total;
+  check(dataset.items?.length === totalItems, 'dataset.items == /items total');
 
   const csvRes = await fetch(`${base}/api/v1/dataset.csv`);
   const csv = await csvRes.text();
   const csvLines = csv.trim().split('\n');
   check(csvLines[0].toLowerCase().includes('name'), 'CSV has header row');
-  check(csvLines.length - 1 === items.data.length, 'CSV rows == item count');
+  check(csvLines.length - 1 === dataset.items?.length, 'CSV rows == dataset export count');
   check((csvRes.headers.get('content-type') ?? '').includes('text/csv'), 'CSV content-type');
 
   const searchRes = await fetch(`${base}/api/search?q=example`);
@@ -94,7 +97,7 @@ async function main() {
   const metaRes = await fetch(`${base}/api/v1/dataset/meta`);
   const meta = await metaRes.json();
   check(metaRes.status === 200 && typeof meta.version === 'string', 'dataset/meta returns version');
-  check(meta.itemCount === items.data.length, 'dataset/meta itemCount == /items count');
+  check(meta.itemCount === dataset.items?.length, 'dataset/meta itemCount == dataset export count');
 
   const etag = datasetRes.headers.get('etag');
   check(etag !== null, 'dataset response has ETag');
