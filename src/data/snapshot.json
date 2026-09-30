@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-30T15:42:15.678Z",
+  "exportedAt": "2026-09-30T15:42:22.528Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1175,6 +1175,29 @@
       "optOut": false,
       "calendarDates": [],
       "notes": "data.pa.gov/api/views.json lists 826 datasets and a SODA query on /resource/nbwd-pfn4.json returns election mail-ballot rows; checked 2026-10-01."
+    },
+    {
+      "id": "healthdata-gov",
+      "name": "HealthData.gov",
+      "slug": "healthdata-gov",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Washington, DC",
+      "lat": 38.9072,
+      "lng": -77.0369,
+      "website": "https://healthdata.gov/",
+      "categories": ["catalog", "health", "api", "government"],
+      "description": "HHS open data catalog at healthdata.gov: a DCAT feed of about 19,700 datasets from FDA, CDC, CMS, NIH, and other HHS divisions, plus a Socrata discovery API for search across the catalog.",
+      "source": {
+        "label": "US Department of Health & Human Services",
+        "url": "https://healthdata.gov/data.json"
+      },
+      "lastVerified": "2026-10-01",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "healthdata.gov/data.json returns 19,685 dataset records across 95 publishers and /api/catalog/v1?q=hospital returns Socrata discovery results; checked 2026-10-01."
     }
   ]
 }

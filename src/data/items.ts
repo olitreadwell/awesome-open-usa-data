@@ -958,6 +958,28 @@ const rawItems = [
     notes:
       'data.pa.gov/api/views.json lists 826 datasets and a SODA query on /resource/nbwd-pfn4.json returns election mail-ballot rows; checked 2026-10-01.',
   },
+  {
+    id: 'healthdata-gov',
+    slug: 'healthdata-gov',
+    name: 'HealthData.gov',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'HHS open data catalog at healthdata.gov: a DCAT feed of about 19,700 datasets from FDA, CDC, CMS, NIH, and other HHS divisions, plus a Socrata discovery API for search across the catalog.',
+    categories: ['catalog', 'health', 'api', 'government'],
+    website: 'https://healthdata.gov/',
+    source: {
+      label: 'US Department of Health & Human Services',
+      url: 'https://healthdata.gov/data.json',
+    },
+    lastVerified: '2026-10-01',
+    verified: true,
+    notes:
+      'healthdata.gov/data.json returns 19,685 dataset records across 95 publishers and /api/catalog/v1?q=hospital returns Socrata discovery results; checked 2026-10-01.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

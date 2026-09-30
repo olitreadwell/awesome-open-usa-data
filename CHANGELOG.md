@@ -7,6 +7,7 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-10-01: `HealthData.gov` (healthdata.gov) added to the dataset.
 - 2026-10-01: `Pennsylvania Open Data` (data.pa.gov) added to the dataset.
 - 2026-10-01: `Bureau of Transportation Statistics` (data.bts.gov) added to
   the dataset.

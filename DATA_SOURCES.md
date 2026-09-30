@@ -46,6 +46,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `CFPB Open Data` | consumer complaints, HMDA mortgage data, and small business lending on consumerfinance.gov (CFPB) | ✅ planned |
 | `Bureau of Transportation Statistics` | transportation indicators, freight and supply-chain measures, state finance tables (data.bts.gov) | ✅ planned |
 | `Pennsylvania Open Data` | state agency datasets on data.pa.gov (Socrata) | ✅ planned |
+| `HealthData.gov` | HHS-wide dataset catalog with a DCAT feed and Socrata discovery API (healthdata.gov) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis
