@@ -939,6 +939,25 @@ const rawItems = [
     notes:
       'data.bts.gov/api/views.json lists 585 datasets and a SODA query on /resource/crem-w557.json returns rows for Monthly Transportation Statistics; checked 2026-10-01.',
   },
+  {
+    id: 'pennsylvania-open-data',
+    slug: 'pennsylvania-open-data',
+    name: 'Pennsylvania Open Data',
+    city: 'Harrisburg',
+    region: 'Pennsylvania',
+    location: 'Statewide',
+    lat: 40.2732,
+    lng: -76.8867,
+    description:
+      "Pennsylvania's state open data portal at data.pa.gov: agency datasets on elections, revenue, education, health, and transportation, served through Socrata SODA APIs with CSV, JSON, and XML exports.",
+    categories: ['catalog', 'api', 'government', 'statistics'],
+    website: 'https://data.pa.gov/',
+    source: { label: 'Commonwealth of Pennsylvania', url: 'https://data.pa.gov/' },
+    lastVerified: '2026-10-01',
+    verified: true,
+    notes:
+      'data.pa.gov/api/views.json lists 826 datasets and a SODA query on /resource/nbwd-pfn4.json returns election mail-ballot rows; checked 2026-10-01.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

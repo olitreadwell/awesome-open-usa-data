@@ -45,6 +45,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `NHTSA Vehicle APIs` | vehicle recalls, complaints, ratings, and VIN decoding on api.nhtsa.gov (NHTSA) | ✅ planned |
 | `CFPB Open Data` | consumer complaints, HMDA mortgage data, and small business lending on consumerfinance.gov (CFPB) | ✅ planned |
 | `Bureau of Transportation Statistics` | transportation indicators, freight and supply-chain measures, state finance tables (data.bts.gov) | ✅ planned |
+| `Pennsylvania Open Data` | state agency datasets on data.pa.gov (Socrata) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis
