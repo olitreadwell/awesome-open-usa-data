@@ -28,7 +28,7 @@ const rawItems = [
     categories: ['catalog', 'api'],
     website: 'https://data.gov/',
     source: { label: 'data.gov', url: 'https://data.gov/developers/apis/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -45,7 +45,7 @@ const rawItems = [
     categories: ['api', 'catalog'],
     website: 'https://api.data.gov/',
     source: { label: 'api.data.gov', url: 'https://api.data.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -65,7 +65,7 @@ const rawItems = [
       label: 'Census Bureau',
       url: 'https://www.census.gov/data/developers/data-sets.html',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -82,7 +82,7 @@ const rawItems = [
     categories: ['statistics', 'economy', 'api'],
     website: 'https://www.bls.gov/developers/',
     source: { label: 'BLS', url: 'https://www.bls.gov/developers/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -99,7 +99,7 @@ const rawItems = [
     categories: ['economy', 'statistics', 'api'],
     website: 'https://apps.bea.gov/api/',
     source: { label: 'BEA', url: 'https://apps.bea.gov/api/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -116,7 +116,7 @@ const rawItems = [
     categories: ['energy', 'statistics', 'api'],
     website: 'https://www.eia.gov/opendata/',
     source: { label: 'EIA', url: 'https://www.eia.gov/opendata/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -133,7 +133,7 @@ const rawItems = [
     categories: ['geospatial', 'science', 'api'],
     website: 'https://earthquake.usgs.gov/fdsnws/event/1/',
     source: { label: 'USGS', url: 'https://earthquake.usgs.gov/fdsnws/event/1/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -150,7 +150,7 @@ const rawItems = [
     categories: ['weather', 'environment', 'api'],
     website: 'https://www.noaa.gov/',
     source: { label: 'NOAA', url: 'https://www.noaa.gov/data' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
     notes:
       'The old /information-technology/open-apis page returns 404, so this listing links the NOAA data hub instead (re-checked 2026-09-24).',
@@ -169,7 +169,7 @@ const rawItems = [
     categories: ['environment', 'catalog', 'api'],
     website: 'https://cdx.epa.gov/',
     source: { label: 'EPA', url: 'https://data.epa.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -186,7 +186,7 @@ const rawItems = [
     categories: ['health', 'statistics', 'api'],
     website: 'https://data.cdc.gov/',
     source: { label: 'CDC', url: 'https://data.cdc.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -203,7 +203,7 @@ const rawItems = [
     categories: ['economy', 'statistics'],
     website: 'https://www.irs.gov/statistics',
     source: { label: 'IRS', url: 'https://www.irs.gov/statistics' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -220,7 +220,7 @@ const rawItems = [
     categories: ['education', 'statistics'],
     website: 'https://data.ed.gov/',
     source: { label: 'US Department of Education', url: 'https://data.ed.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
     notes:
       'data.ed.gov answers automated checks with 403 (bot protection) while serving normal browsers; the site is live, so the link stays.',
@@ -239,7 +239,7 @@ const rawItems = [
     categories: ['crime', 'statistics'],
     website: 'https://bjs.ojp.gov/',
     source: { label: 'BJS', url: 'https://bjs.ojp.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -256,7 +256,7 @@ const rawItems = [
     categories: ['disasters', 'catalog', 'api'],
     website: 'https://www.fema.gov/about/reports-and-data/openfema',
     source: { label: 'FEMA', url: 'https://www.fema.gov/about/reports-and-data/openfema' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -273,7 +273,7 @@ const rawItems = [
     categories: ['science', 'api'],
     website: 'https://api.nasa.gov/',
     source: { label: 'NASA', url: 'https://api.nasa.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -290,7 +290,7 @@ const rawItems = [
     categories: ['transport', 'catalog', 'api'],
     website: 'https://data.transportation.gov/',
     source: { label: 'US DOT', url: 'https://www.transportation.gov/data' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
     notes:
       'www.transportation.gov/data answers scripted checks with 403 (bot protection) but renders in a browser, checked in Chrome on 2026-09-30; the site itself points at data.transportation.gov, which is the portal linked here.',
@@ -309,7 +309,7 @@ const rawItems = [
     categories: ['telecom', 'catalog', 'api'],
     website: 'https://opendata.fcc.gov/',
     source: { label: 'FCC', url: 'https://opendata.fcc.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -329,7 +329,7 @@ const rawItems = [
       label: 'Federal Register',
       url: 'https://www.federalregister.gov/developers/documentation/api/v1',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -344,7 +344,7 @@ const rawItems = [
     categories: ['government', 'api'],
     website: 'https://open.pluralpolicy.com/',
     source: { label: 'Plural Policy (Open States)', url: 'https://open.pluralpolicy.com/data' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -361,7 +361,7 @@ const rawItems = [
     categories: ['business', 'government', 'catalog'],
     website: 'https://sam.gov/entity-information',
     source: { label: 'GSA', url: 'https://open.gsa.gov/api/entity-api/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
     notes:
       'sam.gov answered a browser user agent here, but it has timed out on scripted checks from this host (2026-09-23); the GSA Entity Management API docs linked as the source return 200.',
@@ -380,7 +380,7 @@ const rawItems = [
     categories: ['economy', 'government', 'api'],
     website: 'https://api.usaspending.gov/',
     source: { label: 'US Department of the Treasury', url: 'https://api.usaspending.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -400,7 +400,7 @@ const rawItems = [
       label: 'US Department of the Treasury',
       url: 'https://fiscaldata.treasury.gov/api-documentation/',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -417,7 +417,7 @@ const rawItems = [
     categories: ['health', 'api'],
     website: 'https://open.fda.gov/',
     source: { label: 'US Food and Drug Administration', url: 'https://open.fda.gov/apis/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -434,7 +434,7 @@ const rawItems = [
     categories: ['health', 'science', 'api'],
     website: 'https://reporter.nih.gov/',
     source: { label: 'US National Institutes of Health', url: 'https://api.reporter.nih.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -451,7 +451,7 @@ const rawItems = [
     categories: ['catalog', 'api', 'transport'],
     website: 'https://www.nyc.gov/opendata',
     source: { label: 'NYC Open Data', url: 'https://data.cityofnewyork.us/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
     notes:
       'The city now serves the portal UI from nyc.gov/opendata; data.cityofnewyork.us still answers Socrata API queries and redirects browsers to the new address.',
@@ -470,7 +470,7 @@ const rawItems = [
     categories: ['catalog', 'api'],
     website: 'https://data.ny.gov/',
     source: { label: 'New York State', url: 'https://data.ny.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -487,7 +487,7 @@ const rawItems = [
     categories: ['catalog', 'api'],
     website: 'https://data.ca.gov/',
     source: { label: 'State of California', url: 'https://data.ca.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -504,7 +504,7 @@ const rawItems = [
     categories: ['catalog', 'api', 'crime'],
     website: 'https://data.cityofchicago.org/',
     source: { label: 'City of Chicago', url: 'https://data.cityofchicago.org/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -521,7 +521,7 @@ const rawItems = [
     categories: ['catalog', 'api'],
     website: 'https://data.lacity.org/',
     source: { label: 'City of Los Angeles', url: 'https://data.lacity.org/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -538,7 +538,7 @@ const rawItems = [
     categories: ['catalog', 'api'],
     website: 'https://data.seattle.gov/',
     source: { label: 'City of Seattle', url: 'https://data.seattle.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -555,7 +555,7 @@ const rawItems = [
     categories: ['catalog', 'api'],
     website: 'https://data.texas.gov/',
     source: { label: 'State of Texas', url: 'https://data.texas.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -572,7 +572,7 @@ const rawItems = [
     categories: ['catalog', 'api', 'environment'],
     website: 'https://data.colorado.gov/',
     source: { label: 'State of Colorado', url: 'https://data.colorado.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -589,7 +589,7 @@ const rawItems = [
     categories: ['catalog', 'api', 'government'],
     website: 'https://data.wa.gov/',
     source: { label: 'State of Washington', url: 'https://data.wa.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -609,7 +609,7 @@ const rawItems = [
       label: 'SEC',
       url: 'https://www.sec.gov/search-filings/edgar-application-programming-interfaces',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -626,7 +626,7 @@ const rawItems = [
     categories: ['health', 'statistics', 'api'],
     website: 'https://data.cms.gov/provider-data/',
     source: { label: 'CMS', url: 'https://data.cms.gov/provider-data/docs' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -643,7 +643,7 @@ const rawItems = [
     categories: ['catalog', 'api', 'government'],
     website: 'https://data.michigan.gov/',
     source: { label: 'State of Michigan', url: 'https://data.michigan.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -660,7 +660,7 @@ const rawItems = [
     categories: ['finance', 'statistics', 'api'],
     website: 'https://banks.data.fdic.gov/bankfind-suite/bankfind',
     source: { label: 'FDIC', url: 'https://api.fdic.gov/banks/docs' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -677,7 +677,7 @@ const rawItems = [
     categories: ['agriculture', 'statistics', 'api'],
     website: 'https://quickstats.nass.usda.gov/',
     source: { label: 'USDA NASS', url: 'https://quickstats.nass.usda.gov/api' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -694,7 +694,7 @@ const rawItems = [
     categories: ['catalog', 'api', 'government'],
     website: 'https://data.sf.gov/',
     source: { label: 'City and County of San Francisco', url: 'https://data.sf.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -714,7 +714,7 @@ const rawItems = [
       label: 'Federal Reserve Bank of St. Louis',
       url: 'https://fred.stlouisfed.org/docs/api/fred/',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -731,7 +731,7 @@ const rawItems = [
     categories: ['government', 'finance', 'api'],
     website: 'https://www.fec.gov/data/',
     source: { label: 'Federal Election Commission', url: 'https://api.open.fec.gov/developers/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -748,7 +748,7 @@ const rawItems = [
     categories: ['government', 'catalog', 'api'],
     website: 'https://www.govinfo.gov/',
     source: { label: 'US Government Publishing Office', url: 'https://api.govinfo.gov/docs/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -768,7 +768,7 @@ const rawItems = [
       label: 'National Weather Service',
       url: 'https://www.weather.gov/documentation/services-web-api',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -788,7 +788,7 @@ const rawItems = [
       label: 'USDA Agricultural Research Service',
       url: 'https://fdc.nal.usda.gov/api-guide/',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -808,7 +808,7 @@ const rawItems = [
       label: 'Smithsonian Institution',
       url: 'https://registry.opendata.aws/smithsonian-open-access/',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -825,7 +825,7 @@ const rawItems = [
     categories: ['government', 'api'],
     website: 'https://api.congress.gov/',
     source: { label: 'Library of Congress', url: 'https://api.congress.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -842,7 +842,7 @@ const rawItems = [
     categories: ['government', 'regulation', 'api'],
     website: 'https://www.regulations.gov/',
     source: { label: 'GSA', url: 'https://open.gsa.gov/api/regulationsgov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -859,7 +859,7 @@ const rawItems = [
     categories: ['crime', 'statistics', 'api'],
     website: 'https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi',
     source: { label: 'FBI', url: 'https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -876,7 +876,7 @@ const rawItems = [
     categories: ['catalog', 'api', 'government'],
     website: 'https://data.oregon.gov/',
     source: { label: 'State of Oregon', url: 'https://data.oregon.gov/' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
   },
   {
@@ -893,7 +893,7 @@ const rawItems = [
     categories: ['transport', 'safety', 'api'],
     website: 'https://api.nhtsa.gov/',
     source: { label: 'NHTSA', url: 'https://www.nhtsa.gov/nhtsa-datasets-and-apis' },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
     notes:
       'The datasets and APIs page answers scripted checks with 403 (bot protection) but renders in a browser, checked in Chrome on 2026-09-30; the endpoints themselves answer a declared user-agent.',
@@ -915,7 +915,7 @@ const rawItems = [
       label: 'CFPB',
       url: 'https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/',
     },
-    lastVerified: '2026-09-30',
+    lastVerified: '2026-10-01',
     verified: true,
     notes:
       'consumerfinance.gov answers scripted checks with 403 (bot protection) and 200 to a request with a declared user-agent, which is how the complaint API and the data pages were checked on 2026-09-30.',

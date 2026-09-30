@@ -7,6 +7,13 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-10-01: re-checked every listing URL and source link, 75 unique
+  addresses after dedupe, four requests at a time. Seventy answered 200.
+  Five federal pages answer scripted checks with 403 and render in Chrome:
+  transportation.gov/data (US DOT), nhtsa.gov/nhtsa-datasets-and-apis,
+  noaa.gov, noaa.gov/data, and regulations.gov. Each was opened in a real
+  browser today and kept its URL. `lastVerified` rolled forward to
+  2026-10-01.
 - 2026-09-30: re-checked all 48 listing URLs and source links, 69 unique
   addresses after dedupe, four requests at a time. Most answered 200 on the
   first pass. Five federal sites answer scripted checks with 403 while
