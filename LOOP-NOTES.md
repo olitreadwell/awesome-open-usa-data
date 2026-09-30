@@ -256,3 +256,32 @@ per iteration, plus a fuller entry when something blocks the loop.
 - `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
   links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
   in CI on the push.
+
+## 2026-10-01
+
+- Link sweep of all 51 listings (75 unique URLs after dedupe, four requests at
+  a time): 70 answered 200 on the first pass. Five return 403 to every scripted
+  client tried and all five render real pages in Chrome, opened there today:
+  `www.transportation.gov/data` ("Data | US Department of Transportation"),
+  `www.nhtsa.gov/nhtsa-datasets-and-apis` ("NHTSA Datasets and APIs"),
+  `www.noaa.gov` and `www.noaa.gov/data` (NOAA data hub),
+  `www.regulations.gov` (Regulations.gov), and `www.bls.gov/developers/`. No
+  URL moved, only `lastVerified` rolled forward to 2026-10-01 (`5b35a10`).
+- Shipped three sources, each checked live on its API surface before adding:
+  `Bureau of Transportation Statistics` (`73ba4d7`), `Pennsylvania Open Data`
+  (`bd8d852`), and `HealthData.gov` (`aa5495a`). Evidence behind each:
+  `data.bts.gov/api/views.json` lists 585 datasets and a SODA query on
+  `/resource/crem-w557.json` returns rows from "Monthly Transportation
+  Statistics"; `data.pa.gov/api/views.json` lists 826 datasets and
+  `/resource/nbwd-pfn4.json` returns election mail ballot request rows;
+  `healthdata.gov/data.json` returns 19,685 dataset records from 95 publishers
+  and `/api/catalog/v1?q=hospital` returns Socrata discovery results.
+- Candidates checked and skipped. `opendata.dc.gov` answers 200 on the landing
+  page but `/api/views.json` 404s, so its API surface is not Socrata and waits
+  for a documented endpoint. `www.huduser.gov/portal/dataset/` answers 202 with
+  an empty body (bot challenge) and `data.hud.gov/data.json` is a thin DCAT
+  catalog with no dataset search, so HUD waits too. `developer.nps.gov` and
+  `www.loc.gov/apis/` still 403.
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
