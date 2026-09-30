@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-09-30T15:42:22.528Z",
+  "exportedAt": "2026-09-30T18:07:10.783Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1175,6 +1175,29 @@
       "optOut": false,
       "calendarDates": [],
       "notes": "data.pa.gov/api/views.json lists 826 datasets and a SODA query on /resource/nbwd-pfn4.json returns election mail-ballot rows; checked 2026-10-01."
+    },
+    {
+      "id": "usgs-water-services",
+      "name": "USGS Water Services",
+      "slug": "usgs-water-services",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Reston, VA",
+      "lat": 38.9475,
+      "lng": -77.3675,
+      "website": "https://waterdata.usgs.gov/",
+      "categories": ["environment", "api", "statistics", "geospatial"],
+      "description": "USGS Water Services, the web services behind the National Water Information System (NWIS): daily, monthly, and annual streamflow for tens of thousands of river gauges, plus the annual peak-flow record for each one, as JSON, RDB, or WaterML. Keyless.",
+      "source": {
+        "label": "US Geological Survey",
+        "url": "https://waterservices.usgs.gov/docs/"
+      },
+      "lastVerified": "2026-10-01",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "api.waterdata.usgs.gov/ogcapi/v0/collections/peaks/items?monitoring_location_id=USGS-07010000 returns 165 annual peak-flow records for the Mississippi River at St. Louis, back to 1844, and waterservices.usgs.gov/nwis/dv/ answers daily mean discharge for the same site; both checked 2026-10-01."
     },
     {
       "id": "healthdata-gov",

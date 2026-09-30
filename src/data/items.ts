@@ -959,6 +959,25 @@ const rawItems = [
       'data.pa.gov/api/views.json lists 826 datasets and a SODA query on /resource/nbwd-pfn4.json returns election mail-ballot rows; checked 2026-10-01.',
   },
   {
+    id: 'usgs-water-services',
+    slug: 'usgs-water-services',
+    name: 'USGS Water Services',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Reston, VA',
+    lat: 38.9475,
+    lng: -77.3675,
+    description:
+      'USGS Water Services, the web services behind the National Water Information System (NWIS): daily, monthly, and annual streamflow for tens of thousands of river gauges, plus the annual peak-flow record for each one, as JSON, RDB, or WaterML. Keyless.',
+    categories: ['environment', 'api', 'statistics', 'geospatial'],
+    website: 'https://waterdata.usgs.gov/',
+    source: { label: 'US Geological Survey', url: 'https://waterservices.usgs.gov/docs/' },
+    lastVerified: '2026-10-01',
+    verified: true,
+    notes:
+      'api.waterdata.usgs.gov/ogcapi/v0/collections/peaks/items?monitoring_location_id=USGS-07010000 returns 165 annual peak-flow records for the Mississippi River at St. Louis, back to 1844, and waterservices.usgs.gov/nwis/dv/ answers daily mean discharge for the same site; both checked 2026-10-01.',
+  },
+  {
     id: 'healthdata-gov',
     slug: 'healthdata-gov',
     name: 'HealthData.gov',
