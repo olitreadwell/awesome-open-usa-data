@@ -49,6 +49,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `HealthData.gov` | HHS-wide dataset catalog with a DCAT feed and Socrata discovery API (healthdata.gov) | ✅ planned |
 | `USGS Water Services` | daily, monthly, and annual streamflow plus annual peak-flow records from the National Water Information System (waterdata.usgs.gov) | ✅ planned |
 | `ClinicalTrials.gov API` | clinical study records with a keyless v2 API and a bulk JSON zip (clinicaltrials.gov) | ✅ planned |
+| `AirNow API` | current and forecast air quality observations from EPA's interagency AirNow program (docs.airnowapi.org) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

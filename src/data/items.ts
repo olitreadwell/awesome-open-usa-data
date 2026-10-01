@@ -1023,6 +1023,25 @@ const rawItems = [
     notes:
       'api/v2/studies?pageSize=1&countTotal=true returns totalCount 605,357 and /api/v2/studies/download?format=json.zip streams application/zip; both checked 2026-10-02.',
   },
+  {
+    id: 'airnow-api',
+    slug: 'airnow-api',
+    name: 'AirNow API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      "Air quality observations and forecasts from the EPA's AirNow program, which draws on more than 150 local, state, tribal, provincial, and federal partner agencies and more than 2,500 monitoring stations. The REST API returns current AQI by ZIP code, reporting area, or latitude and longitude, plus forecasts, with a free key. Values are preliminary, not regulatory-grade.",
+    categories: ['environment', 'weather', 'api', 'health'],
+    website: 'https://www.airnow.gov/',
+    source: { label: 'US EPA AirNow', url: 'https://docs.airnowapi.org/' },
+    lastVerified: '2026-10-02',
+    verified: true,
+    notes:
+      'The observation endpoint answers 401 "Request not authenticated" without a key, which shows the service is live and key-gated; docs.airnowapi.org and www.airnow.gov return 200; checked 2026-10-02.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

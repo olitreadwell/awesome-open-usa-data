@@ -80,6 +80,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-10-02: `AirNow API` (docs.airnowapi.org, key-gated current and
+  forecast AQI observations) added to the dataset.
 - 2026-10-02: `ClinicalTrials.gov API` (clinicaltrials.gov/api/v2,
   keyless JSON plus a bulk download) added to the dataset.
 - 2026-09-30: `CFPB Open Data` (consumerfinance.gov/data-research, consumer complaint search API) added to the dataset.
