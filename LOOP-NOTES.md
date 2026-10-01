@@ -285,3 +285,38 @@ per iteration, plus a fuller entry when something blocks the loop.
 - `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
   links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
   in CI on the push.
+
+## 2026-10-02
+
+- Link sweep of all 55 listings (81 unique URLs after dedupe, four requests at
+  a time, HTTP/1.1 pinned, browser user-agent then the declared one): 78
+  answered 200 on the first pass. Three return 403 to every scripted client and
+  all three rendered real pages in Chrome, opened there today:
+  `www.transportation.gov/data` ("Data | US Department of Transportation"),
+  `www.fema.gov/about/reports-and-data/openfema` ("OpenFEMA | FEMA.gov"), and
+  `www.nhtsa.gov/nhtsa-datasets-and-apis` ("NHTSA Datasets and APIs"). No URL
+  moved, the FEMA listing now records the 403 in `notes`, and `lastVerified`
+  rolled forward to 2026-10-02 (`8929c36`).
+- Shipped three sources, each checked live on its API surface before adding:
+  `ClinicalTrials.gov API` (`71ef3a5`), `AirNow API` (`209828b`), and
+  `Illinois Open Data` (`8a742f2`). Evidence behind each:
+  `clinicaltrials.gov/api/v2/studies?pageSize=1&countTotal=true` returns
+  totalCount 605,357 and `/api/v2/studies/download?format=json.zip` streams
+  application/zip; the AirNow observation endpoint returns 401 "Request not
+  authenticated" without a key while `docs.airnowapi.org` and `www.airnow.gov`
+  return 200, and the API docs page states the program draws on more than
+  2,500 monitoring stations, forecasts for more than 500 cities, and more than
+  150 partner agencies; `data.illinois.gov/api/views.json` lists 404 datasets
+  and a SODA query on `/resource/hswm-jvu8.json` returns rows.
+- Candidates checked and skipped. `data.ohio.gov` answers 404 at the root and
+  on `/api/views.json`, `data.virginia.gov` answers 200 but 404s its Socrata
+  catalog API, `opendata.maryland.gov` answers 200 but timed out on
+  `/api/views.json`, and `developer.nrel.gov`, `data.florida.gov` and
+  `data.az.gov` did not resolve from this host. `opendata.maryland.gov` waits
+  for one clean catalog response; `NCBI E-utilities` is the strongest next
+  candidate, already verified this run (`esearch.fcgi?db=pubmed&term=asthma`
+  returns count 245,845, `einfo.fcgi` lists 38 databases, and the NBK25501 API
+  docs return 200).
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
