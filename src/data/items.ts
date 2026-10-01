@@ -1061,6 +1061,28 @@ const rawItems = [
     notes:
       'data.illinois.gov/api/views.json lists 404 datasets and a SODA query on /resource/hswm-jvu8.json returns rows; checked 2026-10-02.',
   },
+  {
+    id: 'cpsc-product-recalls',
+    slug: 'cpsc-product-recalls',
+    name: 'CPSC Product Recall API',
+    city: 'Bethesda',
+    region: 'Maryland',
+    location: 'Federal',
+    lat: 38.9845,
+    lng: -77.0955,
+    description:
+      'Every consumer product recall the Consumer Product Safety Commission has published, one record per recall with the product, the hazard, the remedy offered, the countries that made it, and the model numbers. The REST endpoint answers JSON without a key, and the same records run SaferProducts.gov.',
+    categories: ['safety', 'government', 'api'],
+    website: 'https://www.saferproducts.gov/',
+    source: {
+      label: 'US Consumer Product Safety Commission',
+      url: 'https://www.saferproducts.gov/RestWebServices/Recall',
+    },
+    lastVerified: '2026-10-02',
+    verified: true,
+    notes:
+      'A one-year query answers 200 with the whole year in one response (2025 returns 420 recalls, 1.3 MB), while a range wider than a year fails with a single row reading "Error retrieving Recalls: The underlying provider failed on Open"; the connector reads one year at a time for that reason. Checked 2026-10-02: 459 recalls dated 2026 through 24 September, and www.saferproducts.gov, the API endpoint, and www.cpsc.gov/Recalls all return 200.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
