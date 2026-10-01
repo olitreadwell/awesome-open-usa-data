@@ -7,6 +7,14 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-10-02: re-checked every listing URL and source link, 81 unique
+  addresses after dedupe, four requests at a time. Seventy-eight answered
+  200 on the first pass. Three federal pages answer scripted checks with 403
+  (bot protection) and render in Chrome: transportation.gov/data (US DOT),
+  fema.gov/about/reports-and-data/openfema, and
+  nhtsa.gov/nhtsa-datasets-and-apis, each opened in a browser today. No URL
+  moved, `lastVerified` rolled forward to 2026-10-02, and the FEMA listing
+  now records the 403 alongside the existing notes on the other two.
 - 2026-10-01: `HealthData.gov` (healthdata.gov) added to the dataset.
 - 2026-10-01: `Pennsylvania Open Data` (data.pa.gov) added to the dataset.
 - 2026-10-01: `Bureau of Transportation Statistics` (data.bts.gov) added to
