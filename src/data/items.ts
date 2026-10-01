@@ -1001,6 +1001,28 @@ const rawItems = [
     notes:
       'healthdata.gov/data.json returns 19,685 dataset records across 95 publishers and /api/catalog/v1?q=hospital returns Socrata discovery results; checked 2026-10-01.',
   },
+  {
+    id: 'clinicaltrials-gov-api',
+    slug: 'clinicaltrials-gov-api',
+    name: 'ClinicalTrials.gov API',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Bethesda, MD',
+    lat: 38.9847,
+    lng: -77.0947,
+    description:
+      'Clinical study registry from the National Library of Medicine: 605,000+ studies with sponsor, recruitment status, phase, enrollment, outcome measures, and locations. The v2 REST API answers JSON without a key, and /api/v2/studies/download streams every record as a zip of JSON.',
+    categories: ['health', 'science', 'api'],
+    website: 'https://clinicaltrials.gov/',
+    source: {
+      label: 'US National Library of Medicine',
+      url: 'https://clinicaltrials.gov/data-api/api',
+    },
+    lastVerified: '2026-10-02',
+    verified: true,
+    notes:
+      'api/v2/studies?pageSize=1&countTotal=true returns totalCount 605,357 and /api/v2/studies/download?format=json.zip streams application/zip; both checked 2026-10-02.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */

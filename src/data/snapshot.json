@@ -1,6 +1,6 @@
 {
   "version": "seed",
-  "exportedAt": "2026-10-01T15:42:20.002Z",
+  "exportedAt": "2026-10-01T15:42:38.017Z",
   "license": "Public data only. Opt-out respected: see /opt-out.",
   "items": [
     {
@@ -1222,6 +1222,29 @@
       "optOut": false,
       "calendarDates": [],
       "notes": "healthdata.gov/data.json returns 19,685 dataset records across 95 publishers and /api/catalog/v1?q=hospital returns Socrata discovery results; checked 2026-10-01."
+    },
+    {
+      "id": "clinicaltrials-gov-api",
+      "name": "ClinicalTrials.gov API",
+      "slug": "clinicaltrials-gov-api",
+      "city": "Federal",
+      "region": "United States",
+      "location": "Bethesda, MD",
+      "lat": 38.9847,
+      "lng": -77.0947,
+      "website": "https://clinicaltrials.gov/",
+      "categories": ["health", "science", "api"],
+      "description": "Clinical study registry from the National Library of Medicine: 605,000+ studies with sponsor, recruitment status, phase, enrollment, outcome measures, and locations. The v2 REST API answers JSON without a key, and /api/v2/studies/download streams every record as a zip of JSON.",
+      "source": {
+        "label": "US National Library of Medicine",
+        "url": "https://clinicaltrials.gov/data-api/api"
+      },
+      "lastVerified": "2026-10-02",
+      "verified": true,
+      "active": true,
+      "optOut": false,
+      "calendarDates": [],
+      "notes": "api/v2/studies?pageSize=1&countTotal=true returns totalCount 605,357 and /api/v2/studies/download?format=json.zip streams application/zip; both checked 2026-10-02."
     }
   ]
 }

@@ -80,6 +80,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-10-02: `ClinicalTrials.gov API` (clinicaltrials.gov/api/v2,
+  keyless JSON plus a bulk download) added to the dataset.
 - 2026-09-30: `CFPB Open Data` (consumerfinance.gov/data-research, consumer complaint search API) added to the dataset.
 - 2026-09-30: `NHTSA Vehicle APIs` (api.nhtsa.gov, documented at nhtsa.gov/nhtsa-datasets-and-apis) added to the dataset.
 - 2026-09-30: `Oregon Open Data` (data.oregon.gov, Socrata SODA API) added to the dataset.
