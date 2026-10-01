@@ -80,6 +80,8 @@ All notable changes documented here. Format follows
 
 ### Added
 
+- 2026-10-02: `Illinois Open Data` (data.illinois.gov, Socrata SODA API)
+  added to the dataset.
 - 2026-10-02: `AirNow API` (docs.airnowapi.org, key-gated current and
   forecast AQI observations) added to the dataset.
 - 2026-10-02: `ClinicalTrials.gov API` (clinicaltrials.gov/api/v2,

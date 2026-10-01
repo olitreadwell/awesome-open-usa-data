@@ -1042,6 +1042,25 @@ const rawItems = [
     notes:
       'The observation endpoint answers 401 "Request not authenticated" without a key, which shows the service is live and key-gated; docs.airnowapi.org and www.airnow.gov return 200; checked 2026-10-02.',
   },
+  {
+    id: 'illinois-open-data',
+    slug: 'illinois-open-data',
+    name: 'Illinois Open Data',
+    city: 'Springfield',
+    region: 'Illinois',
+    location: 'Statewide',
+    lat: 39.7817,
+    lng: -89.6501,
+    description:
+      'The State of Illinois portal at data.illinois.gov: 404 datasets from state agencies covering health and human services, public safety, revenue, transportation, and the environment, published through the Socrata SODA API with CSV, JSON, and XML exports.',
+    categories: ['catalog', 'api', 'government'],
+    website: 'https://data.illinois.gov/',
+    source: { label: 'State of Illinois', url: 'https://data.illinois.gov/' },
+    lastVerified: '2026-10-02',
+    verified: true,
+    notes:
+      'data.illinois.gov/api/views.json lists 404 datasets and a SODA query on /resource/hswm-jvu8.json returns rows; checked 2026-10-02.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
