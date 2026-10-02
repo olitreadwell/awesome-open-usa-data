@@ -52,6 +52,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `AirNow API` | current and forecast air quality observations from EPA's interagency AirNow program (docs.airnowapi.org) | ✅ planned |
 | `Illinois Open Data` | state agency datasets on data.illinois.gov (Socrata) | ✅ planned |
 | `CPSC Product Recall API` | consumer product recall records with hazard, remedy, and manufacturer country (saferproducts.gov) | ✅ planned |
+| `NCBI E-utilities` | keyless REST access to 38 NCBI databases including PubMed, PMC, GenBank, and dbSNP (dataguide.nlm.nih.gov) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

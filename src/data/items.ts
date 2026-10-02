@@ -1083,6 +1083,28 @@ const rawItems = [
     notes:
       'A one-year query answers 200 with the whole year in one response (2025 returns 420 recalls, 1.3 MB), while a range wider than a year fails with a single row reading "Error retrieving Recalls: The underlying provider failed on Open"; the connector reads one year at a time for that reason. Checked 2026-10-02: 459 recalls dated 2026 through 24 September, and www.saferproducts.gov, the API endpoint, and www.cpsc.gov/Recalls all return 200.',
   },
+  {
+    id: 'ncbi-e-utilities',
+    slug: 'ncbi-e-utilities',
+    name: 'NCBI E-utilities',
+    city: 'Bethesda',
+    region: 'Maryland',
+    location: 'Federal',
+    lat: 38.9954,
+    lng: -77.102,
+    description:
+      "The National Center for Biotechnology Information's keyless REST interface to 38 databases, from PubMed and PMC to GenBank, dbSNP, Protein, Taxonomy, and ClinVar. Search, summary, fetch, and link requests answer as JSON or XML.",
+    categories: ['health', 'science', 'api', 'government'],
+    website: 'https://www.ncbi.nlm.nih.gov/home/develop/',
+    source: {
+      label: 'National Library of Medicine',
+      url: 'https://dataguide.nlm.nih.gov/eutilities/utilities.html',
+    },
+    lastVerified: '2026-10-03',
+    verified: true,
+    notes:
+      'einfo.fcgi lists 38 databases and esearch.fcgi?db=pubmed&term=asthma returns count 245,875; www.ncbi.nlm.nih.gov and the NLM E-utilities guide return 200 while Bookshelf documentation pages answer scripted clients with a reCAPTCHA; checked 2026-10-03.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
