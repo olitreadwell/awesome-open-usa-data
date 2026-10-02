@@ -7,6 +7,10 @@ All notable changes documented here. Format follows
 
 ### Changed
 
+- 2026-10-03: re-checked every listing URL and source link, 88 unique
+  addresses after dedupe, four requests at a time. All 88 answered 200 on
+  the first pass, so no URL moved and `lastVerified` rolled forward to
+  2026-10-03.
 - 2026-10-02: re-checked every listing URL and source link, 81 unique
   addresses after dedupe, four requests at a time. Seventy-eight answered
   200 on the first pass. Three federal pages answer scripted checks with 403
