@@ -320,3 +320,33 @@ per iteration, plus a fuller entry when something blocks the loop.
 - `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
   links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
   in CI on the push.
+
+## 2026-10-03
+
+- Link sweep of all 59 listings (88 unique URLs after dedupe, four requests
+  at a time, declared user-agent `awesome-open-usa-data/1.0`): every URL
+  answered 200 on the first pass, including transportation.gov, fema.gov,
+  nhtsa.gov and regulations.gov, which had returned 403 to earlier sweeps.
+  No URL moved; `lastVerified` rolled forward to 2026-10-03.
+- Shipped three sources, each checked live on its API surface before adding:
+  `NCBI E-utilities`, `New Jersey Open Data`, and `Vermont Open Data`.
+  Evidence behind each: `einfo.fcgi` lists 38 NCBI databases and
+  `esearch.fcgi?db=pubmed&term=asthma` returns count 245,875 while the
+  Bookshelf docs pages answer scripted clients with a reCAPTCHA, so the
+  listing points at the live NLM E-utilities guide;
+  `data.nj.gov/api/views.json` lists 621 datasets and a SODA query on
+  `/resource/ts75-sevp.json` returns rows; `data.vermont.gov/api/views.json`
+  lists 270 datasets and `/resource/u4te-7p3s.json` returns
+  chronic-absenteeism rows.
+- Candidates checked and skipped. `opendata.maryland.gov` answers 200 on the
+  landing page but `/api/views.json` times out; `data.ohio.gov`,
+  `data.iowa.gov` and `data.ok.gov` 404 their catalog API;
+  `opendata.utah.gov` is decommissioned ("This domain has been
+  decommissioned"); `developer.nrel.gov` and `developer.dol.gov` still do not
+  resolve; `data.hrsa.gov` has no API path at `/api/`; EPA Envirofacts 403s
+  behind its web application firewall. Verified and waiting for a slot:
+  `data.medicaid.gov` (DKAN metastore API returns dataset records),
+  `data.mo.gov` (1.9 MB catalog) and `data.ct.gov` (12.7 MB catalog).
+- `pnpm run check:fast` green (snapshot, format, lint, typecheck, data tests,
+  links, build) with the tree clean afterwards. Coverage, e2e, and smoke run
+  in CI on the push.
