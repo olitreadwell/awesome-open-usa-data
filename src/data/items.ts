@@ -1105,6 +1105,25 @@ const rawItems = [
     notes:
       'einfo.fcgi lists 38 databases and esearch.fcgi?db=pubmed&term=asthma returns count 245,875; www.ncbi.nlm.nih.gov and the NLM E-utilities guide return 200 while Bookshelf documentation pages answer scripted clients with a reCAPTCHA; checked 2026-10-03.',
   },
+  {
+    id: 'new-jersey-open-data',
+    slug: 'new-jersey-open-data',
+    name: 'New Jersey Open Data',
+    city: 'Trenton',
+    region: 'New Jersey',
+    location: 'Statewide',
+    lat: 40.2171,
+    lng: -74.7429,
+    description:
+      'The State of New Jersey portal at data.nj.gov: 621 datasets from state agencies covering the environment, public safety, health, transportation, and the state budget, published through the Socrata SODA API with CSV, JSON, and XML exports.',
+    categories: ['catalog', 'api', 'government'],
+    website: 'https://data.nj.gov/',
+    source: { label: 'State of New Jersey', url: 'https://data.nj.gov/' },
+    lastVerified: '2026-10-03',
+    verified: true,
+    notes:
+      'data.nj.gov/api/views.json lists 621 datasets and a SODA query on /resource/ts75-sevp.json returns rows; checked 2026-10-03.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
