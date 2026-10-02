@@ -55,6 +55,7 @@ Vercel Cron, and record every run in `scrapes` (DB mode) or
 | `NCBI E-utilities` | keyless REST access to 38 NCBI databases including PubMed, PMC, GenBank, and dbSNP (dataguide.nlm.nih.gov) | ✅ planned |
 | `New Jersey Open Data` | state agency datasets on data.nj.gov (Socrata) | ✅ planned |
 | `Vermont Open Data` | state agency datasets on data.vermont.gov (Socrata) | ✅ planned |
+| `CFPB Consumer Complaint Database` | one row per consumer complaint sent to a company, with product, issue, company, and date received (consumerfinance.gov) | ✅ planned |
 <!-- SEED-SOURCES -->
 
 ## Candidate seeds from public-apis

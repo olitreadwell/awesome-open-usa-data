@@ -923,6 +923,28 @@ const rawItems = [
       'consumerfinance.gov answers scripted checks with 403 (bot protection) and 200 to a request with a declared user-agent, which is how the complaint API and the data pages were checked on 2026-09-30.',
   },
   {
+    id: 'cfpb-consumer-complaints',
+    slug: 'cfpb-consumer-complaints',
+    name: 'CFPB Consumer Complaint Database',
+    city: 'Federal',
+    region: 'United States',
+    location: 'Washington, DC',
+    lat: 38.9072,
+    lng: -77.0369,
+    description:
+      'The Consumer Complaint Database, one row for every complaint the Consumer Financial Protection Bureau has sent to a company since December 2011: more than 18 million records with the product, the issue, the company, the date received, and the company response. The search API answers JSON without a key, and the same rows run the public complaint search.',
+    categories: ['finance', 'consumer', 'api', 'statistics'],
+    website: 'https://www.consumerfinance.gov/data-research/consumer-complaints/',
+    source: {
+      label: 'Consumer Financial Protection Bureau',
+      url: 'https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/',
+    },
+    lastVerified: '2026-10-03',
+    verified: true,
+    notes:
+      'The search API answers one request with size=0 and no_aggs=true as a small JSON body holding hits.total.value, and adding date_received_min and date_received_max narrows it to one year; the sixteen yearly totals for 2011 to 2026 sum to the file total of 18,145,013. The newest received date is 2 October 2026. consumerfinance.gov answers scripted checks with 403 (bot protection) and 200 to a request with a declared user-agent; both the complaint search page and the API base were checked that way on 2026-10-03.',
+  },
+  {
     id: 'bts-transportation-statistics',
     slug: 'bts-transportation-statistics',
     name: 'Bureau of Transportation Statistics',
