@@ -1124,6 +1124,25 @@ const rawItems = [
     notes:
       'data.nj.gov/api/views.json lists 621 datasets and a SODA query on /resource/ts75-sevp.json returns rows; checked 2026-10-03.',
   },
+  {
+    id: 'vermont-open-data',
+    slug: 'vermont-open-data',
+    name: 'Vermont Open Data',
+    city: 'Montpelier',
+    region: 'Vermont',
+    location: 'Statewide',
+    lat: 44.2601,
+    lng: -72.5754,
+    description:
+      'The State of Vermont portal at data.vermont.gov: 270 datasets from state agencies covering education, health, transportation, energy, and the environment, published through the Socrata SODA API with CSV, JSON, and XML exports.',
+    categories: ['catalog', 'api', 'government'],
+    website: 'https://data.vermont.gov/',
+    source: { label: 'State of Vermont', url: 'https://data.vermont.gov/' },
+    lastVerified: '2026-10-03',
+    verified: true,
+    notes:
+      'data.vermont.gov/api/views.json lists 270 datasets and a SODA query on /resource/u4te-7p3s.json returns chronic-absenteeism rows; checked 2026-10-03.',
+  },
 ] as const;
 
 /** Validated seed listings, exported for tests and the snapshot builder. */
